@@ -20,7 +20,7 @@ public class AlarmService extends IntentService {
 
     @Override
     public void onHandleIntent(Intent intent) {
-        sendNotification("You set alarm");
+        sendNotification("");
     }
 
     private void sendNotification(String msg) {
@@ -32,7 +32,7 @@ public class AlarmService extends IntentService {
                 new Intent(this, MyActivity.class), 0);
 
         NotificationCompat.Builder alamNotificationBuilder = new NotificationCompat.Builder(
-                this).setContentTitle("MOD Clothes").setSmallIcon(R.mipmap.ic_launcher)
+                this).setContentTitle("New Message from MOD Clothes").setSmallIcon(R.mipmap.ic_launcher)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(msg))
                 .setContentText(msg);
 
