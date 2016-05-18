@@ -17,14 +17,15 @@
         android:layout_height="206dp"
         android:layout_gravity="right|top"
         android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout3">
 
         <Button
             android:id="@+id/btnDatePicker"
             style="@style/DTP.Button"
-            android:background="@mipmap/ic_launcher"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:background="@drawable/ic_calendar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
@@ -43,8 +44,8 @@
             android:id="@+id/btnTimePicker"
             style="@style/DTP.Button"
             android:background="@drawable/ic_alarm_add_black_24dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:layout_below="@+id/btnDatePicker"
             android:layout_alignParentRight="true"
@@ -55,7 +56,7 @@
             style="@style/DTP.Label"
             android:layout_width="207dp"
             android:text="b"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/btnDatePicker"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -65,17 +66,10 @@
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp">
+        android:layout_marginTop="210dp"
+        android:layout_alignRight="@+id/relativeLayout3"
+        android:layout_alignEnd="@+id/relativeLayout3">
 
-
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alarm On/Off"
-            android:id="@+id/alarmToggle"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/alarmTimePicker"
-            android:onClick="onToggleClicked" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,6 +81,16 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_below="@+id/alarmToggle" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm On/Off"
+            android:id="@+id/alarmToggle"
+            android:layout_marginLeft="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alarmTimePicker"
+            android:onClick="onToggleClicked" />
     </LinearLayout>
 
 </RelativeLayout>
