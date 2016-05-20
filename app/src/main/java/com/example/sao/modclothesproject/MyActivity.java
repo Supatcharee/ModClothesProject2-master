@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.ToggleButton;
@@ -21,7 +22,9 @@ import android.widget.ToggleButton;
 import com.android.datetimepicker.date.DatePickerDialog;
 import com.android.datetimepicker.time.RadialPickerLayout;
 import com.android.datetimepicker.time.TimePickerDialog;
+import com.roomorama.caldroid.CaldroidFragment;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -55,6 +58,43 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
     public void onStart() {
         super.onStart();
         inst = this;
+    }
+
+    private String[] FilePathStrings;
+    private String[] FileNameStrings;
+    private File[] listFile;
+    GridView grid;
+    GAdapter adapter;
+    File file;
+
+    private boolean undo = false;
+    private CaldroidFragment caldroidFragment;
+    private CaldroidFragment dialogCaldroidFragment;
+
+    private void setCustomResourceForDates() {
+        Calendar cal = Calendar.getInstance();
+
+        cal.add(Calendar.DATE, 0);
+        Date oneDate = cal.getTime();
+
+        cal.add(Calendar.DATE, -2);
+        Date twoDate = cal.getTime();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -7);
+        Date blueDate = cal.getTime();
+
+        // Max date is next 7 days
+        cal = Calendar.getInstance();
+        cal.add(Calendar.DATE, 7);
+        Date greenDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.dress),oneDate);
+            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.dress),twoDate);
+            caldroidFragment.setTextColorForDate(R.color.twhite, blueDate);
+            caldroidFragment.setTextColorForDate(R.color.twhite, greenDate);
+        }
     }
 
 
@@ -103,6 +143,7 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
             Intent myIntent = new Intent(MyActivity.this, AlarmReceiver.class);
             pendingIntent = PendingIntent.getBroadcast(MyActivity.this, 0, myIntent, 0);
             alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+
 
         } else {
             alarmManager.cancel(pendingIntent);

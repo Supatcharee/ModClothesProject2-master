@@ -8,8 +8,20 @@
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_selected_date.xml"
     },
     {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_selected_date.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_selected_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_view_animator.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_view_animator.xml"
+    },
+    {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_header_view.xml",
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_header_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\time_header_label.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\time_header_label.xml"
     },
     {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_dialog.xml",
@@ -24,11 +36,31 @@
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\time_header_label.xml"
     },
     {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_done_button.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_done_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\year_label_text_view.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\year_label_text_view.xml"
+    },
+    {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\year_label_text_view.xml",
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\year_label_text_view.xml"
     },
     {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_header_view.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_header_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_dialog.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\date_picker_done_button.xml",
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\layout\\date_picker_done_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\time_picker_dialog.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\layout\\time_picker_dialog.xml"
     }
 ]

@@ -77,8 +77,9 @@ public class CaldroidSampleActivity extends AppCompatActivity {
             file = new File(Environment.getExternalStorageDirectory()
                     + File.separator + "MOD Images");
             // Create a new folder if no folder named SDImageTutorial exist
-            file.mkdirs();
-            Date lastModDate = new Date(file.lastModified());
+            if(!file.exists()) {
+                file.mkdirs();
+            }
         }
 
         if (file.isDirectory()) {

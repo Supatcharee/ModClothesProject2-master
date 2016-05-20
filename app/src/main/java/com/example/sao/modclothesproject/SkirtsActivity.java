@@ -48,7 +48,9 @@ public class SkirtsActivity extends AppCompatActivity {
             file = new File(Environment.getExternalStorageDirectory()
                     + File.separator + "Skirts");
             // Create a new folder if no folder named SDImageTutorial exist
-            file.mkdirs();
+            if(!file.exists()) {
+                file.mkdirs();
+            }
         }
 
         if (file.isDirectory()) {

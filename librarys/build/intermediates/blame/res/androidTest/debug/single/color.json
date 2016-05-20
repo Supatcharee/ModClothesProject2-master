@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_year_selector.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\color\\date_picker_year_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_selector.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\color\\date_picker_selector.xml"
+    },
+    {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_year_selector.xml",
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\color\\date_picker_year_selector.xml"
     },
@@ -10,6 +18,14 @@
     {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\done_text_color.xml",
         "source": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\bundles\\debug\\res\\color\\done_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\done_text_color_dark.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\color\\done_text_color_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\done_text_color.xml",
+        "source": "C:\\Users\\Sao\\Desktop\\aaaa\\ModClothesProject1-master\\librarys\\build\\intermediates\\bundles\\debug\\res\\color\\done_text_color.xml"
     },
     {
         "merged": "C:\\Users\\Sao\\Downloads\\datetimepicker-master\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_selector.xml",
