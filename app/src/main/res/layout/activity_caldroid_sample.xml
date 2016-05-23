@@ -34,18 +34,8 @@
             <LinearLayout
                 android:id="@+id/button_layout"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="128dp"
                 android:orientation="horizontal">
-
-                <GridView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/gridView"
-                    android:numColumns="1"
-                    android:columnWidth="400dp"
-                    android:gravity="left"
-                    android:layout_marginTop="20dp"
-                   android:stretchMode="spacingWidth" />
 
                 <Button
                     android:id="@+id/customize_button"
@@ -69,4 +59,28 @@
 
         </LinearLayout>
     </ScrollView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <GridView
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/gridView"
+        android:numColumns="1"
+        android:columnWidth="400dp"
+        android:gravity="left"
+        android:background="@color/caldroid_gray"
+        android:layout_marginTop="325dp"
+        android:stretchMode="spacingWidth"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_marginTop="325dp"
+        android:layout_width="fill_parent"
+        android:background="@color/caldroid_gray"
+        android:layout_height="match_parent" />
+</LinearLayout>
 </RelativeLayout>

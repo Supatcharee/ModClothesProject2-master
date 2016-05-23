@@ -5,16 +5,22 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.ToggleButton;
@@ -30,7 +36,33 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Calendar;
 
-public class MyActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import android.app.Activity;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.v4.widget.SimpleCursorAdapter;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class MyActivity extends AppCompatActivity
+        implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener,
+        View.OnClickListener,
+        AdapterView.OnItemClickListener {
+    EditText etPersonName;
+    Button btnAddPerson;
+    ListView list;
+
+    MyDbHelper dbHelper;
+    SQLiteDatabase db;
+    Cursor cursor;
+    SimpleCursorAdapter adapter1;
 
     private NotificationManager myNotificationManager;
     private int notificationIdOne = 111;
@@ -59,13 +91,6 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
         super.onStart();
         inst = this;
     }
-
-    private String[] FilePathStrings;
-    private String[] FileNameStrings;
-    private File[] listFile;
-    GridView grid;
-    GAdapter adapter;
-    File file;
 
     private boolean undo = false;
     private CaldroidFragment caldroidFragment;
@@ -114,9 +139,14 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
                         .setAction("Action", null).show();
             }
         });
+        etPersonName = (EditText) findViewById(R.id.person_name);
+        list = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(this);
+
+        dbHelper = new MyDbHelper(this);
 
 
-        calendar = java.util.Calendar.getInstance();
+    calendar = java.util.Calendar.getInstance();
         dateFormat = DateFormat.getDateInstance(DateFormat.LONG, Locale.getDefault());
         timeFormat = new SimpleDateFormat(TIME_PATTERN, Locale.getDefault());
 
@@ -143,7 +173,17 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
             Intent myIntent = new Intent(MyActivity.this, AlarmReceiver.class);
             pendingIntent = PendingIntent.getBroadcast(MyActivity.this, 0, myIntent, 0);
             alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+            ContentValues cv = new ContentValues();
+            cv.put(MyDbHelper.COL_NAME, "Description : "+etPersonName.getText().toString()+"\nTimes : "+lblDate.getText().toString()+" "+lblTime.getText().toString());
 
+            SimpleDateFormat dateFormat = new SimpleDateFormat(
+                    "yyyy-MM-dd HH:mm:ss");
+            cv.put(MyDbHelper.COL_DATE, dateFormat.format(new Date()));
+
+            db.insert(MyDbHelper.TABLE_NAME, null, cv);
+            cursor.requery();
+            adapter1.notifyDataSetChanged();
+            etPersonName.setText(null);
 
         } else {
             alarmManager.cancel(pendingIntent);
@@ -164,6 +204,7 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
     }
 
     public void onClick(View view) {
+
         switch (view.getId()) {
             case R.id.btnDatePicker:
                 DatePickerDialog.newInstance(this, calendar.get(java.util.Calendar.YEAR), calendar.get(java.util.Calendar.MONTH), calendar.get(java.util.Calendar.DAY_OF_MONTH)).show(getFragmentManager(), "datePicker");
@@ -173,6 +214,7 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
                 break;
         }
     }
+
 
     @Override
     public void onDateSet(DatePickerDialog dialog, int year, int monthOfYear, int dayOfMonth) {
@@ -225,4 +267,40 @@ public class MyActivity extends AppCompatActivity implements DatePickerDialog.On
         // pass the Notification object to the system
         myNotificationManager.notify(notificationIdOne, mBuilder.build());
     }*/
+@Override
+public void onResume() {
+    super.onResume();
+    db = dbHelper.getWritableDatabase();
+    String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+            MyDbHelper.COL_DATE };
+    cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, null, null,
+            null, null, null);
+
+    String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+            MyDbHelper.COL_DATE };
+    int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+    adapter1 = new SimpleCursorAdapter(this,
+            android.R.layout.two_line_list_item, cursor, showColumns, views);
+    list.setAdapter(adapter1);
+}
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        cursor.close();
+        db.close();
+    }
+
+
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+        cursor.moveToPosition(position);
+        String rowId = cursor.getString(0);
+        db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
+        cursor.requery();
+        adapter1.notifyDataSetChanged();
+    }
+
 }
