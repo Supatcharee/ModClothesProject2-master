@@ -63,7 +63,7 @@
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <GridView
+    <!--<GridView
         android:layout_width="50dp"
         android:layout_height="fill_parent"
         android:id="@+id/gridView"
@@ -75,7 +75,7 @@
         android:stretchMode="spacingWidth"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true" />-->
     <ListView
         android:id="@+id/list"
         android:layout_marginTop="325dp"

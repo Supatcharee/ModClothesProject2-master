@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/caldroid_gray"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.sao.modclothesproject.MyActivity"
     tools:showIn="@layout/activity_my">
@@ -61,7 +62,7 @@
             android:layout_alignParentStart="true" />
         <EditText
             android:id="@+id/person_name"
-            android:text="aaa : "
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lblTime"
@@ -101,6 +102,7 @@
             android:onClick="onToggleClicked" />
     </LinearLayout>
 
+
     <ListView
         android:id="@+id/list"
         android:layout_marginLeft="60dp"
@@ -126,5 +128,19 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/button5"
+        android:layout_marginTop="5dp"
+        android:background="@color/caldroid_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

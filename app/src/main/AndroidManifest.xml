@@ -69,13 +69,15 @@
         <service
             android:name=".AlarmService"
             android:enabled="true" />
+
         <receiver android:name=".AlarmReceiver" />
 
         <activity android:name=".CaldroidSampleActivity" />
         <activity
             android:name=".MyActivity"
             android:label="@string/title_activity_my"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TodayActivity"></activity>
     </application>
 
 </manifest>

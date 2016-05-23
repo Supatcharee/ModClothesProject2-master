@@ -1,6 +1,7 @@
 package com.example.sao.modclothesproject;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.widget.SimpleCursorAdapter;
@@ -31,6 +32,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+
+
 @SuppressLint("SimpleDateFormat")
 public class CaldroidSampleActivity extends AppCompatActivity implements View.OnClickListener,
         AdapterView.OnItemClickListener{
@@ -58,7 +61,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         cal.add(Calendar.DATE, 0);
         Date oneDate = cal.getTime();
 
-        cal.add(Calendar.DATE, -2);
+        cal.add(Calendar.DATE, 3);
         Date twoDate = cal.getTime();
 
         // Min date is last 7 days
@@ -71,10 +74,35 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Date greenDate = cal.getTime();
 
         if (caldroidFragment != null) {
-            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.dress),oneDate);
-            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.dress),twoDate);
-            caldroidFragment.setTextColorForDate(R.color.twhite, blueDate);
-            caldroidFragment.setTextColorForDate(R.color.twhite, greenDate);
+            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
+            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),twoDate);
+            caldroidFragment.setTextColorForDate(R.color.black, blueDate);
+            caldroidFragment.setTextColorForDate(R.color.black, greenDate);
+        }
+    }
+
+    private void setCustomResourceForDates1() {
+        Calendar cal = Calendar.getInstance();
+
+        cal.add(Calendar.DATE, 0);
+        Date oneDate = cal.getTime();
+
+        cal.add(Calendar.DATE, 3);
+        Date twoDate = cal.getTime();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -7);
+        Date blueDate = cal.getTime();
+
+        // Max date is next 7 days
+        cal = Calendar.getInstance();
+        cal.add(Calendar.DATE, 7);
+        Date greenDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),twoDate);
+            caldroidFragment.setBackgroundDrawableForDate(get);
+
         }
     }
 
@@ -86,7 +114,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         list.setOnItemClickListener(this);
 
         dbHelper = new MyDbHelper(this);
-        if (!Environment.getExternalStorageState().equals(
+        /*if (!Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
                     .show();
@@ -116,13 +144,12 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
             }
         }
 
-
         // Locate the GridView in gridview_main.xml
         grid = (GridView) findViewById(R.id.gridView);
         // Pass String arrays to LazyAdapter Class
         adapter = new GAdapter(this, FilePathStrings, FileNameStrings);
         // Set the LazyAdapter to the GridView
-        grid.setAdapter(adapter);
+        grid.setAdapter(adapter);*/
 
 
 
@@ -178,10 +205,22 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
             @Override
             public void onSelectDate(Date date, View view) {
-                Toast.makeText(getApplicationContext(), formatter.format(date),
+                Toast.makeText(getApplicationContext(),
+                         formatter.format(date),
                         Toast.LENGTH_SHORT).show();
+                if(formatter.format(date).contains("23 May 2016")){
+                    Intent intent = new Intent(CaldroidSampleActivity.this, TodayActivity.class);
+                    startActivity(intent);
+                }
+                if(formatter.format(date).contains("26 May 2016")){
+                    onResume1();
+                    Intent intent = new Intent(CaldroidSampleActivity.this, CaldroidSampleActivity.class);
+                    startActivity(intent);
 
 
+
+
+                }
 
             }
 
@@ -190,6 +229,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 String text = "month: " + month + " year: " + year;
                 Toast.makeText(getApplicationContext(), text,
                         Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -357,10 +397,43 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     public void onResume() {
         super.onResume();
         db = dbHelper.getWritableDatabase();
+
         String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
-        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, null, null,
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 26, 2016%'", null,
                 null, null, null);
+
+
+
+        /*cursor = db.rawQuery("SELECT * FROM " + MyDbHelper.TABLE_NAME
+                + " WHERE " + MyDbHelper.COL_NAME + "26 LIKE '%=?%'", null);
+       */
+
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+
+    public void onResume1() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 26, 2016%'", null,
+                null, null, null);
+
+
+
+        /*cursor = db.rawQuery("SELECT * FROM " + MyDbHelper.TABLE_NAME
+                + " WHERE " + MyDbHelper.COL_NAME + "26 LIKE '%=?%'", null);
+       */
+
 
         String[] showColumns = new String[] { MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
