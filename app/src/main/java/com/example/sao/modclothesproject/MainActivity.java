@@ -29,28 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-        imageView.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(MainActivity.this, ClosetActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton imageButton = (ImageButton) findViewById(R.id.ibtnCloset);
-        imageView.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(MainActivity.this, ClosetActivity.class);
-                startActivity(intent);
-            }
-        });
-
         Button btnCollection=(Button)findViewById(R.id.btnCT);
         btnCollection.setOnClickListener(new View.OnClickListener() {
 
@@ -61,32 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-       /* ImageView imageView2 = (ImageView) findViewById(R.id.imageView4);
-        imageView2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(MainActivity.this, CollectionActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton imageButton2 = (ImageButton)findViewById(R.id.btnCollection);
-        imageButton2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(MainActivity.this, CollectionActivity.class);
-                startActivity(intent);
-            }
-        });*/
 
         Button btnWomenStyle=(Button)findViewById(R.id.btnC);
         btnWomenStyle.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +83,68 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnCalendar1 = (Button)findViewById(R.id.btnCS1);
+        btnCalendar1.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this, CaldroidSampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnCloset1 = (Button)findViewById(R.id.btnWS1);
+        btnCloset1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this, ClosetActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView about = (ImageView)findViewById(R.id.imageView8);
+        about.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        about = (ImageView)findViewById(R.id.imageView5);
+        about.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this, WomanStyleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        about = (ImageView)findViewById(R.id.imageView4);
+        about.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this, CollectionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton imageButton = (ImageButton)findViewById(R.id.imageButton2);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
