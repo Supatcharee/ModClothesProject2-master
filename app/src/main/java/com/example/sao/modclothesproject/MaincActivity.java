@@ -89,15 +89,6 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             }
         });
 
-        /*imageView = (ImageView) findViewById(R.id.imageView5);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myRecyclerViewAdapter.clearAll();
-                prepareGalleryimage5();
-            }
-        });*/
-
         imageView = (ImageView) findViewById(R.id.imageView6);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,61 +106,6 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
                 startActivity(intent);
             }
         });
-
-        /*btnSaveAll.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                View v1 = findViewById(android.R.id.content).getRootView();
-                v1.setDrawingCacheEnabled(true);
-                Bitmap bmp = Bitmap.createBitmap(v1.getDrawingCache());
-                v1.setDrawingCacheEnabled(false);
-
-                try {
-                    Date d = new Date();
-                    String filename  = (String) DateFormat.format("kkmmss-MMddyyyy"
-                            , d.getTime());
-                    File dir = new File(Environment.getExternalStorageDirectory()
-                            , "/Pictures/" + filename + ".jpg");
-                    FileOutputStream out = new FileOutputStream(dir);
-                    ByteArrayOutputStream bos = new ByteArrayOutputStream();
-                    bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-                    out.write(bos.toByteArray());
-                    Toast.makeText(getApplicationContext(), "Save all!"
-                            , Toast.LENGTH_SHORT).show();
-                } catch (FileNotFoundException e) {
-                }  catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-*/
-
-        /*Button btnSaveCard = (Button) findViewById(R.id.button2);
-        btnSaveCard.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                View v1 = findViewById(R.id.relativeLayout);
-                v1.setDrawingCacheEnabled(true);
-                Bitmap bmp = Bitmap.createBitmap(v1.getDrawingCache());
-                v1.setDrawingCacheEnabled(false);
-
-                try {
-                    Date d = new Date();
-                    String filename  = (String)DateFormat.format("kkmmss-MMddyyyy"
-                            , d.getTime());
-                    File dir = new File(Environment.getExternalStorageDirectory()
-                            , "/Collections/" + filename + ".png");
-                    FileOutputStream out = new FileOutputStream(dir);
-                    ByteArrayOutputStream bos = new ByteArrayOutputStream();
-                    bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-                    out.write(bos.toByteArray());
-                    Toast.makeText(getApplicationContext(), "Save card!"
-                            , Toast.LENGTH_SHORT).show();
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }  catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });*/
     }
 
     private void save(){
@@ -288,17 +224,17 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
                 bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
                 imageView.setImageBitmap(bmp);*/
         String word1 = item.getItemUri();
-        String word2 = "Ac";
+        String Ac = "Ac";
         String word3 = "Skirts";
-        String word4 = "Dr";
+        String Dr = "Dr";
         String word5 = "Pa";
         String word6 = "Shoes";
         String word7 = "Shirts";
         String word8 = "Co";
 
-        boolean b = word1.contains(word2);
+        boolean b = word1.contains(Ac);
 
-        if(word1.contains(word4)){
+        if(word1.contains(Dr)){
 
             imageView = (ImageView) findViewById(R.id.info1);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
@@ -308,7 +244,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
 
 
-        else if(word1.contains(word2)){
+        else if(word1.contains(Ac)){
 
             imageView = (ImageView) findViewById(R.id.imageView4);
             bmp = BitmapFactory.decodeFile(item.getItemUri());

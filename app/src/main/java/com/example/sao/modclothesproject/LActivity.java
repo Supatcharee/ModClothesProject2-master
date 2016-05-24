@@ -75,14 +75,14 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
             }
         });
 
-        imageView = (ImageView) findViewById(R.id.imageView5);
+        /*imageView = (ImageView) findViewById(R.id.imageView5);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 myRecyclerViewAdapter.clearAll();
                 prepareGalleryimage5();
             }
-        });
+        });*/
 
         imageView = (ImageView) findViewById(R.id.imageView6);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -93,14 +93,14 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
             }
         });
 
-        b = (Button) findViewById(R.id.clock);
+        /*b = (Button) findViewById(R.id.clock);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LActivity.this, SetTimeActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         /*btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -158,7 +158,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
         });*/
     }
 
-    private void save(){
+    /*private void save(){
         View v1 = findViewById(R.id.relativeLayout);
         v1.setDrawingCacheEnabled(true);
         Bitmap bmp = Bitmap.createBitmap(v1.getDrawingCache());
@@ -182,7 +182,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
             e.printStackTrace();
         }
 
-    }
+    }*/
 
     private void prepareGalleryinfo(){
         String ExternalStorageDirectoryPath = Environment
@@ -222,7 +222,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
         }
     }
 
-    private void prepareGalleryimage5(){
+    /*private void prepareGalleryimage5(){
         String ExternalStorageDirectoryPath = Environment
                 .getExternalStorageDirectory()
                 .getAbsolutePath();
@@ -239,7 +239,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
                     uri);
 
         }
-    }
+    }*/
 
     private void prepareGalleryimage6(){
         String ExternalStorageDirectoryPath = Environment
@@ -311,7 +311,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
 
             imageView = (ImageView) findViewById(R.id.imageView6);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 500, 500, false);
             imageView.setImageBitmap(bmp);
         }
 
@@ -342,7 +342,7 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
         }
 
         if (id == R.id.save) {
-            save();
+            //save();
             Intent i = new Intent(LActivity.this, CollectionsActivity.class);
             startActivity(i);
         }

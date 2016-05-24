@@ -303,7 +303,7 @@ public class MActivity extends AppCompatActivity implements MyRecyclerViewAdapte
 
             imageView = (ImageView) findViewById(R.id.imageView4);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 500, 500, false);
             imageView.setImageBitmap(bmp);
         }
 
@@ -311,7 +311,7 @@ public class MActivity extends AppCompatActivity implements MyRecyclerViewAdapte
 
             imageView = (ImageView) findViewById(R.id.imageView6);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 500, 500, false);
             imageView.setImageBitmap(bmp);
         }
 

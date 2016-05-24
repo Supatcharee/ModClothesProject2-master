@@ -1,10 +1,12 @@
 package com.example.sao.modclothesproject;
 
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -74,35 +76,12 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Date greenDate = cal.getTime();
 
         if (caldroidFragment != null) {
+            int c = listFile.length-1;
+            String abc = listFile[c].getAbsolutePath().toString();
             caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
             caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),twoDate);
             caldroidFragment.setTextColorForDate(R.color.black, blueDate);
             caldroidFragment.setTextColorForDate(R.color.black, greenDate);
-        }
-    }
-
-    private void setCustomResourceForDates1() {
-        Calendar cal = Calendar.getInstance();
-
-        cal.add(Calendar.DATE, 0);
-        Date oneDate = cal.getTime();
-
-        cal.add(Calendar.DATE, 3);
-        Date twoDate = cal.getTime();
-
-        // Min date is last 7 days
-        cal.add(Calendar.DATE, -7);
-        Date blueDate = cal.getTime();
-
-        // Max date is next 7 days
-        cal = Calendar.getInstance();
-        cal.add(Calendar.DATE, 7);
-        Date greenDate = cal.getTime();
-
-        if (caldroidFragment != null) {
-            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),twoDate);
-            caldroidFragment.setBackgroundDrawableForDate(get);
-
         }
     }
 
@@ -114,7 +93,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         list.setOnItemClickListener(this);
 
         dbHelper = new MyDbHelper(this);
-        /*if (!Environment.getExternalStorageState().equals(
+        if (!Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
                     .show();
@@ -142,14 +121,23 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 // Get the name image file
                 FileNameStrings[i] = listFile[i].getName();
             }
+            int i = 1;
+            int a = 2;
+            int b = 3;
+            int c = listFile.length-1;
+            /*Toast.makeText(getApplicationContext(), listFile[i].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), listFile[a].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), listFile[b].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();*/
+            String abc = listFile[c].getAbsolutePath().toString();
+
+            Toast.makeText(getApplicationContext(), listFile[c].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
         }
 
-        // Locate the GridView in gridview_main.xml
-        grid = (GridView) findViewById(R.id.gridView);
-        // Pass String arrays to LazyAdapter Class
-        adapter = new GAdapter(this, FilePathStrings, FileNameStrings);
-        // Set the LazyAdapter to the GridView
-        grid.setAdapter(adapter);*/
+
 
 
 
@@ -208,18 +196,98 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 Toast.makeText(getApplicationContext(),
                          formatter.format(date),
                         Toast.LENGTH_SHORT).show();
+                if(formatter.format(date).contains("01 May 2016")){
+                    onResume1();
+                }
+                if(formatter.format(date).contains("02 May 2016")){
+                    onResume2();
+                }
+                if(formatter.format(date).contains("03 May 2016")){
+                    onResume3();
+                }
+                if(formatter.format(date).contains("04 May 2016")){
+                    onResume4();
+                }
+                if(formatter.format(date).contains("05 May 2016")){
+                    onResume5();
+                }
+                if(formatter.format(date).contains("06 May 2016")){
+                    onResume6();
+                }
+                if(formatter.format(date).contains("07 May 2016")){
+                    onResume7();
+                }
+                if(formatter.format(date).contains("08 May 2016")){
+                    onResume8();
+                }
+                if(formatter.format(date).contains("09 May 2016")){
+                    onResume9();
+                }
+                if(formatter.format(date).contains("10 May 2016")){
+                    onResume10();
+                }
+                if(formatter.format(date).contains("11 May 2016")){
+                    onResume11();
+                }
+                if(formatter.format(date).contains("12 May 2016")){
+                    onResume12();
+                }
+                if(formatter.format(date).contains("13 May 2016")){
+                    onResume13();
+                }
+                if(formatter.format(date).contains("14 May 2016")){
+                    onResume14();
+                }
+                if(formatter.format(date).contains("15 May 2016")){
+                    onResume15();
+                }
+                if(formatter.format(date).contains("16 May 2016")){
+                    onResume16();
+                }
+                if(formatter.format(date).contains("17 May 2016")){
+                    onResume17();
+                }
+                if(formatter.format(date).contains("18 May 2016")){
+                    onResume18();
+                }
+                if(formatter.format(date).contains("19 May 2016")){
+                    onResume19();
+                }
+                if(formatter.format(date).contains("20 May 2016")){
+                    onResume20();
+                }
+                if(formatter.format(date).contains("21 May 2016")){
+                    onResume21();
+                }
+                if(formatter.format(date).contains("22 May 2016")){
+                    onResume22();
+                }
                 if(formatter.format(date).contains("23 May 2016")){
-                    Intent intent = new Intent(CaldroidSampleActivity.this, TodayActivity.class);
-                    startActivity(intent);
+                    onResume23();
+                }
+                if(formatter.format(date).contains("24 May 2016")){
+                    onResume24();
+                }
+                if(formatter.format(date).contains("25 May 2016")){
+                    onResume25();
                 }
                 if(formatter.format(date).contains("26 May 2016")){
-                    onResume1();
-                    Intent intent = new Intent(CaldroidSampleActivity.this, CaldroidSampleActivity.class);
-                    startActivity(intent);
-
-
-
-
+                    onResume26();
+                }
+                if(formatter.format(date).contains("27 May 2016")){
+                    onResume27();
+                }
+                if(formatter.format(date).contains("28 May 2016")){
+                    onResume28();
+                }
+                if(formatter.format(date).contains("29 May 2016")){
+                    onResume29();
+                }
+                if(formatter.format(date).contains("30 May 2016")){
+                    onResume30();
+                }
+                if(formatter.format(date).contains("31 May 2016")){
+                    onResume31();
                 }
 
             }
@@ -256,10 +324,10 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
         final TextView textView = (TextView) findViewById(R.id.textview);
 
-        final Button customizeButton = (Button) findViewById(R.id.customize_button);
+        //final Button customizeButton = (Button) findViewById(R.id.customize_button);
 
         // Customize the calendar
-        customizeButton.setOnClickListener(new OnClickListener() {
+        /*customizeButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -277,10 +345,10 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     caldroidFragment.refreshView();
                     undo = false;
                     return;
-                }
+                }*/
 
                 // Else
-                undo = true;
+                /*undo = true;
                 customizeButton.setText(getString(R.string.undo));
                 Calendar cal = Calendar.getInstance();
 
@@ -295,7 +363,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
                 // Set selected dates
                 // From Date
-                /*cal = Calendar.getInstance();
+                *//*cal = Calendar.getInstance();
                 cal.add(Calendar.DATE, 2);
                 Date fromDate = cal.getTime();
 
@@ -303,7 +371,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 cal = Calendar.getInstance();
                 cal.add(Calendar.DATE, 3);
                 Date toDate = cal.getTime();
-*/
+*//*
                 // Set disabled dates
                 ArrayList<Date> disabledDates = new ArrayList<Date>();
                 for (int i = 5; i < 8; i++) {
@@ -327,7 +395,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 // cal.add(Calendar.MONTH, 12);
                 // caldroidFragment.moveToDate(cal.getTime());
 
-                /*String text = "Today: " + formatter.format(new Date()) + "\n";
+                *//*String text = "Today: " + formatter.format(new Date()) + "\n";
                 text += "Min Date: " + formatter.format(minDate) + "\n";
                 text += "Max Date: " + formatter.format(maxDate) + "\n";
                 //text += "Select From Date: " + formatter.format(fromDate)
@@ -337,14 +405,14 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     text += "Disabled Date: " + formatter.format(date) + "\n";
                 }
 
-                textView.setText(text);*/
+                textView.setText(text);*//*
             }
-        });
+        });*/
 
-        Button showDialogButton = (Button) findViewById(R.id.show_dialog_button);
+        //Button showDialogButton = (Button) findViewById(R.id.show_dialog_button);
 
         final Bundle state = savedInstanceState;
-        showDialogButton.setOnClickListener(new OnClickListener() {
+        /*showDialogButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -373,7 +441,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 dialogCaldroidFragment.show(getSupportFragmentManager(),
                         dialogTag);
             }
-        });
+        });*/
     }
 
     /**
@@ -400,15 +468,8 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
         String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
-        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 26, 2016%'", null,
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME + " LIKE '%May 24, 2016%'", null,
                 null, null, null);
-
-
-
-        /*cursor = db.rawQuery("SELECT * FROM " + MyDbHelper.TABLE_NAME
-                + " WHERE " + MyDbHelper.COL_NAME + "26 LIKE '%=?%'", null);
-       */
-
 
         String[] showColumns = new String[] { MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
@@ -418,8 +479,432 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 android.R.layout.two_line_list_item, cursor, showColumns, views);
         list.setAdapter(adapter1);
     }
-
     public void onResume1() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 1, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume2() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 2, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume3() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 3, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume4() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 4, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume5() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 5, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume6() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 6, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume7() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 7, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume8() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 8, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume9() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 9, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume10() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 10, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume11() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 11, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume12() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 12, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume13() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 13, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume14() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 14, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume15() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 15, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume16() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 16, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume17() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 17, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume18() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 18, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume19() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 19, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume20() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 20, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume21() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 21, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume22() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 22, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume23() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 23, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume24() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 24, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume25() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 25, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume26() {
         super.onResume();
         db = dbHelper.getWritableDatabase();
 
@@ -428,12 +913,22 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 26, 2016%'", null,
                 null, null, null);
 
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
 
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume27() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
 
-        /*cursor = db.rawQuery("SELECT * FROM " + MyDbHelper.TABLE_NAME
-                + " WHERE " + MyDbHelper.COL_NAME + "26 LIKE '%=?%'", null);
-       */
-
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 27, 2016%'", null,
+                null, null, null);
 
         String[] showColumns = new String[] { MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
@@ -443,6 +938,75 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 android.R.layout.two_line_list_item, cursor, showColumns, views);
         list.setAdapter(adapter1);
     }
+    public void onResume28() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 28, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume29() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 29, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume30() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 30, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume31() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 31, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+
 
     @Override
     public void onPause() {
@@ -465,14 +1029,37 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         adapter.notifyDataSetChanged();
         //etPersonName.setText(null);
     }
+    public void open(View view){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setMessage("Are you sure,You wanted to make decision");
+
+        alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface arg0, int arg1) {
+                Toast.makeText(CaldroidSampleActivity.this,"You clicked yes button",Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-        /*cursor.moveToPosition(position);
+
+       cursor.moveToPosition(position);
         String rowId = cursor.getString(0);
         db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
         cursor.requery();
-        adapter.notifyDataSetChanged();*/
+        adapter.notifyDataSetChanged();
     }
 
 }

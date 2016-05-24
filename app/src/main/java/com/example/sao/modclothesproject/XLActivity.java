@@ -281,7 +281,7 @@ public class XLActivity extends AppCompatActivity implements MyRecyclerViewAdapt
 
             imageView = (ImageView) findViewById(R.id.info1);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 600, 900, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
             imageView.setImageBitmap(bmp);
         }
 
