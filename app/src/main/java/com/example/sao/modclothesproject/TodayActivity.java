@@ -109,7 +109,7 @@ public class TodayActivity extends Activity implements View.OnClickListener,
         db = dbHelper.getWritableDatabase();
         String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
-        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 23, 2016%'", null,
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 24, 2016%'", null,
                 null, null, null);
 
 
@@ -146,11 +146,11 @@ public class TodayActivity extends Activity implements View.OnClickListener,
 
     @Override
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-       /* cursor.moveToPosition(position);
+       cursor.moveToPosition(position);
         String rowId = cursor.getString(0);
         db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
         cursor.requery();
-        adapter.notifyDataSetChanged();*/
+        adapter.notifyDataSetChanged();
     }
 
 }

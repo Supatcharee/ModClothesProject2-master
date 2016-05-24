@@ -126,6 +126,9 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             out.write(bos.toByteArray());
             Toast.makeText(getApplicationContext(), "Save card!"
                     , Toast.LENGTH_SHORT).show();
+            dir.toString();
+            Toast.makeText(getApplicationContext(), dir.toString()
+                    , Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }  catch (IOException e) {

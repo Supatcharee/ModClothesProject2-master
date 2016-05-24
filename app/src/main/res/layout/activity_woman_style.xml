@@ -14,31 +14,49 @@
         android:layout_height="wrap_content"
         android:text="Pear Shape"
         android:id="@+id/btnPear"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:layout_below="@+id/btnApple"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Apple Shape"
         android:id="@+id/btnApple"
-        android:layout_below="@+id/btnPear"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HourGlass Shape"
+        android:textColor="@color/white"
         android:id="@+id/btnHourGlass"
-        android:layout_below="@+id/btnApple"
+        android:background="#CD8162"
+        android:layout_below="@+id/btnPear"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Rectangle Shape"
+        android:textColor="@color/white"
+        android:background="#838B83"
         android:id="@+id/btnRectangle"
-        android:layout_below="@+id/btnHourGlass"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/btnHourGlass" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView9"
+        android:background="@drawable/womenstyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

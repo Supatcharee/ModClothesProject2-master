@@ -23,6 +23,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -42,6 +43,10 @@ import java.util.Date;
 @SuppressLint("SimpleDateFormat")
 public class CaldroidSampleActivity extends AppCompatActivity implements View.OnClickListener,
         AdapterView.OnItemClickListener{
+
+    EditText etPersonName;
+    Button btnAddPerson;
+
     private String[] FilePathStrings;
     private String[] FileNameStrings;
     private File[] listFile;
@@ -288,9 +293,11 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 }
                 if(formatter.format(date).contains("23 May 2016")){
                     onResume23();
+
                 }
                 if(formatter.format(date).contains("24 May 2016")){
                     onResume24();
+
                 }
                 if(formatter.format(date).contains("25 May 2016")){
                     onResume25();
@@ -1042,7 +1049,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     @Override
     public void onClick(View v) {
         ContentValues cv = new ContentValues();
-        //cv.put(MyDbHelper.COL_NAME, etPersonName.getText().toString());
+        cv.put(MyDbHelper.COL_NAME, etPersonName.getText().toString());
 
         SimpleDateFormat dateFormat = new SimpleDateFormat(
                 "yyyy-MM-dd HH:mm:ss");
@@ -1051,39 +1058,16 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         db.insert(MyDbHelper.TABLE_NAME, null, cv);
         cursor.requery();
         adapter.notifyDataSetChanged();
-        //etPersonName.setText(null);
-    }
-    public void open(View view){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure,You wanted to make decision");
-
-        alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-                Toast.makeText(CaldroidSampleActivity.this,"You clicked yes button",Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
-
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
+        etPersonName.setText(null);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-
-       cursor.moveToPosition(position);
+        cursor.moveToPosition(position);
         String rowId = cursor.getString(0);
         db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
         cursor.requery();
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
     }
 
     @Override

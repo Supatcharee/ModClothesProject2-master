@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">MOD Clothes</string>
-    <string name="title_activity_closet">Closet</string>
+    <string name="app_name">MOD CLOTHES</string>
+    <string name="title_activity_closet">CLOSET</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,7 +8,7 @@
     <string name="action_settings">Camera</string>
 
     <string name="space"> </string>
-    <string name="title_activity_pare_shape">Pare Shape</string>
+    <string name="title_activity_pare_shape">PEAR SHAPE</string>
     <string name="pare_shape1">สำหรับสาวๆ ที่มีรูปร่างแบบลูกแพร์ คือสาวๆ ที่มีช่วงล่างใหญ่กว่าช่วงบน ช่วงไหล่จะแคบ ตัวเล็ก แขนเล็ก แต่บริเวณสะโพก ต้นขา และก้นจะใหญ่กว่าช่วงบนมากๆ</string>
     <string name="pare_shape2">การแต่งตัวของสาวที่มีรูปร่างแบบลูกแพร์คือต้องพยายามบาลานซ์ช่วงสะโพกให้เท่าๆ กับช่วงไหล่ แต่ในขณะเดียวกันก็ต้องแต่งตัวให้มองเห็นส่วนเว้าส่วนโค้งของรูปร่างด้วย</string>
     <string name="Do">Do</string>
@@ -16,19 +16,19 @@
     <string name="detail_pear_2">- สวมเสื้อแบบเปิดไหล่ เพราะจะช่วยเน้นส่วนบนของ ร่างกายและยังช่วยดึงสายตาจากบริเวณสะโพก</string>
     <string name="detail_pear_3">- สวมเสื้อสีสันสดใส เพราะจะทำให้ช่วงบนดูใหญ่ขึ้น ในทางกลับกัน ถ้าใส่เสื้อสีเข้ม จะยิ่งทำให้ช่วงบนดูเล็กและแคบมากขึ้นไป</string>
     <string name="rectangle_shape">Pare Shape</string>
-    <string name="title_activity_apple_shape">Apple Shape</string>
+    <string name="title_activity_apple_shape">APPLE SHAPE</string>
     <string name="apple_shape1">สาวๆที่มีรูปร่างทรงแอปเปิ้ล คือสาวๆ ตัวกลม หรือเรียกว่าสาวๆที่ไม่มีเอว หน้าอกใหญ่ เอวหนา และสะโพกใหญ่</string>
     <string name="apple_shape2">การแต่งตัวของสาวที่มีรูปร่างทรงแอปเปิ้ลคือต้องมั่นใจ ถ้ามั่นใจ ใส่อะไรก็สวย แต่ขึ้นอยู่กับคำว่าพอดีและต้องดูความเหมาะสม</string>
     <string name="detail_apple_1">- ใส่กระโปรงสั้น เพราะจะทำให้สาวๆ ดูชิคและดูคล่องตัวมากขึ้น</string>
     <string name="detail_apple_2">- กระโปรงที่เหมาะ คือกระโปรงทรงเอ เพราะจะช่วยทำใหดูมีรูปร่างที่เพรียวมากขึ้น</string>
     <string name="detail_apple_3">- สาวที่ชื่นชอบการใส่คาร์ดิแกน ควรเลือกใส่คาร์ดิแกนตัวยาว แบบคลุมสะโพก เพราะจะได้ช่วยพรางบริเวณสะโพกและต้นขาได้</string>
     <string name="detail_apple_4">- เลือกไอเท็มชิ้นโปรดเป็นสีเข้มๆ เช่น ดำ เทา น้ำตาล กรมท่า จะได้ช่วยพรางรูปร่างได้</string>
-    <string name="title_activity_hourglass_shape">Hourglass Shape</string>
+    <string name="title_activity_hourglass_shape">HOURGLASS SHAPE</string>
     <string name="hourglass_shape1">สาวๆที่มีเอวคอดและมีสัดส่วนระหว่างหน้าอกกับสะโพกเท่าๆกัน เรียกว่าหุ่นทรงนาฬิกาทราย</string>
     <string name="detail_hourglass_1">- ใส่รองเท้าส้นสูง เพราะจะช่วยทำให้ดูเพรียวขึ้น</string>
     <string name="detail_hourglass_2">- สวมใส่เสื้อผ้าที่มีสีสันสดใส เพื่อช่วยเน้นเรื่องรูปร่าง</string>
     <string name="detail_hourglass_3">- สำหรับสาวๆไซส์มินิ แนะนำให้สาวๆ ใส่เสื้อผ้าลายทางยาว เพื่อช่วยเพิ่มความสูงและช่วยทำให้รูปร่างดูเพรียวมากขึ้น</string>
-    <string name="title_activity_rectangle">RectangleActivity</string>
+    <string name="title_activity_rectangle">RECTANGLE SHAPE</string>
     <string name="rectangle_shape1">สาวๆ ที่มีหุ่นแบบสี่เหลี่ยม คือ มีช่วงไหล่เท่ากับช่วงสะโพก และอกเล็ก</string>
     <string name="detail_rectangle_1">- ถ้าอยากดูมีส่วนเว้าส่วนโค้งหรืออยากดูเป็นผู้หญิงมากขึ้นลองเลือกใส่เดรสที่มียางยืดรัดใต้อก จะช่วยให้สาวๆ ดูมีหน้าอกมากขึ้น</string>
     <string name="detail_rectangle_2">- สำหรับสาวอกไข่ดาวและอยากลองใส่เดรส แนะนำให้เลือกเดรสที่มีระบายๆ จะดูน่ารักและช่วยเพิ่ม Curve ให้กับรูปร่าง</string>
@@ -40,19 +40,19 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
-    <string name="title_activity_collections">Collections</string>
-    <string name="title_activity_womanstyle">Women Styles</string>
-    <string name="title_activity_about">About</string>
-    <string name="title_activity_mainc">Add Collections</string>
-    <string name="title_activity_input">Input Measurements</string>
-    <string name="title_activity_caldroid">Calendar</string>
-    <string name="title_activity_share_fb">Facebook</string>
-    <string name="title_activity_share_shirt">Shirts</string>
-    <string name="title_activity_share_dress">Dress</string>
-    <string name="title_activity_share_skirt">Skirts</string>
-    <string name="title_activity_share_shoes">Shoes</string>
-    <string name="title_activity_share_accessorries">Accessorries</string>
-    <string name="title_activity_share_pants">Pants</string>
+    <string name="title_activity_collections">COLLECTIONS</string>
+    <string name="title_activity_womanstyle">WOMEN STYLES</string>
+    <string name="title_activity_about">ABOUT</string>
+    <string name="title_activity_mainc">ADD COLLECTIONS</string>
+    <string name="title_activity_input">INPUT MEASUREMENTS</string>
+    <string name="title_activity_caldroid">CALENDAR</string>
+    <string name="title_activity_share_fb">FACEBOOK</string>
+    <string name="title_activity_share_shirt">SHIRTS</string>
+    <string name="title_activity_share_dress">DRESS</string>
+    <string name="title_activity_share_skirt">SKIRTS</string>
+    <string name="title_activity_share_shoes">SHOES</string>
+    <string name="title_activity_share_accessorries">ACCESSORIES</string>
+    <string name="title_activity_share_pants">PANTS</string>
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
@@ -67,6 +67,6 @@
     <string name="customize">Customize</string>
     <string name="show_dialog">Show Dialog</string>
     <string name="undo">Undo</string>
-    <string name="title_activity_my">Set Alarm</string>
+    <string name="title_activity_my">SET ALARM</string>
 
 </resources>
