@@ -23,7 +23,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
     private static final String STRING_CREATE =
             "CREATE TABLE " + TABLE_NAME
                     + " (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + COL_NAME + " TEXT, " + COL_DATE + " DATE);";
+                    + COL_NAME + " TEXT, " + "TEXT"+ COL_DATE + " DATE);";
 
     public MyDbHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

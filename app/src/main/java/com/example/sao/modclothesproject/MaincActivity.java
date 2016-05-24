@@ -288,7 +288,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
         if (id == R.id.save) {
             save();
-            Intent i = new Intent(MaincActivity.this, CollectionsActivity.class);
+            Intent i = new Intent(MaincActivity.this, CaldroidSampleActivity.class);
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);
