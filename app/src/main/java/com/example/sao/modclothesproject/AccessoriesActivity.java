@@ -30,7 +30,7 @@ public class AccessoriesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accessories);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectolder();
 
     }
@@ -140,5 +140,11 @@ public class AccessoriesActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
-
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        // or call onBackPressed()
+        return true;
     }
+
+}

@@ -31,7 +31,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:id="@+id/button_layout"
                 android:layout_width="match_parent"
                 android:layout_height="128dp"
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/show_dialog"/>
-            </LinearLayout>
+            </LinearLayout>-->
 
             <TextView
                 android:id="@+id/textview"
@@ -63,19 +63,7 @@
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <!--<GridView
-        android:layout_width="50dp"
-        android:layout_height="fill_parent"
-        android:id="@+id/gridView"
-        android:numColumns="1"
-        android:columnWidth="400dp"
-        android:gravity="left"
-        android:background="@color/caldroid_gray"
-        android:layout_marginTop="325dp"
-        android:stretchMode="spacingWidth"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />-->
+
     <ListView
         android:id="@+id/list"
         android:layout_marginTop="325dp"

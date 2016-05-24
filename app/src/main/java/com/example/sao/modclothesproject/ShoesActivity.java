@@ -32,7 +32,7 @@ public class ShoesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoes);
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectolder();
 
     }
@@ -144,6 +144,11 @@ public class ShoesActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
-
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        // or call onBackPressed()
+        return true;
+    }
 
 }

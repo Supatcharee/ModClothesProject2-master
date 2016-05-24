@@ -30,7 +30,7 @@ public class DressActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dress);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectolder();
 
     }
@@ -139,6 +139,12 @@ public class DressActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        // or call onBackPressed()
+        return true;
     }
 
 }

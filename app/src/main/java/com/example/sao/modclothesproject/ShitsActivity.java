@@ -31,7 +31,7 @@ public class ShitsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shits);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         selectolder();
 
     }
@@ -142,6 +142,12 @@ public class ShitsActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        // or call onBackPressed()
+        return true;
     }
 
 }
