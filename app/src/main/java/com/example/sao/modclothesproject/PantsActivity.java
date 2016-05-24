@@ -94,7 +94,7 @@ public class PantsActivity extends AppCompatActivity {
 
         });
     }
-
+//private void tackphoto(String dir)
     private void tackphoto(){
 
         // location found
@@ -134,6 +134,8 @@ public class PantsActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.camera) {
+            /*String dir = "pants";
+            tackphoto(dir);*/
             tackphoto();
         }
 

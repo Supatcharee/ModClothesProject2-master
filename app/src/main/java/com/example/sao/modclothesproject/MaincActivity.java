@@ -77,6 +77,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             public void onClick(View v) {
                 myRecyclerViewAdapter.clearAll();
                 prepareGalleryimage4();
+
             }
         });
 
@@ -86,6 +87,8 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             public void onClick(View v) {
                 myRecyclerViewAdapter.clearAll();
                 prepareGalleryinfo();
+                prepareGalleryShirts();
+
             }
         });
 
@@ -142,6 +145,24 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
                 .getExternalStorageDirectory()
                 .getAbsolutePath();
         String targetPath = ExternalStorageDirectoryPath + "/Dress/";
+
+        Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
+        File targetDirector = new File(targetPath);
+
+        File[] files = targetDirector.listFiles();
+        for (File file : files){
+            Uri uri = Uri.fromFile(file);
+            myRecyclerViewAdapter.add(
+                    myRecyclerViewAdapter.getItemCount(),
+                    uri);
+
+        }
+    }
+    private void prepareGalleryShirts(){
+        String ExternalStorageDirectoryPath = Environment
+                .getExternalStorageDirectory()
+                .getAbsolutePath();
+        String targetPath = ExternalStorageDirectoryPath + "/Shirts/";
 
         Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
         File targetDirector = new File(targetPath);
@@ -234,6 +255,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         String word6 = "Shoes";
         String word7 = "Shirts";
         String word8 = "Co";
+        String word10 = "Dress";
 
         boolean b = word1.contains(Ac);
 
@@ -241,12 +263,15 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
             imageView = (ImageView) findViewById(R.id.info1);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 50, 100, false);
             imageView.setImageBitmap(bmp);
         }
-
-
-
+        else if(word1.contains(word7)) {
+            imageView = (ImageView) findViewById(R.id.imageView10);
+            bmp = BitmapFactory.decodeFile(item.getItemUri());
+            bmp = Bitmap.createScaledBitmap(bmp, 95, 95, false);
+            imageView.setImageBitmap(bmp);
+        }
         else if(word1.contains(Ac)){
 
             imageView = (ImageView) findViewById(R.id.imageView4);

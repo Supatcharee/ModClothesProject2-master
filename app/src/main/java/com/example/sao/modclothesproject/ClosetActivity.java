@@ -63,7 +63,7 @@ public class ClosetActivity extends AppCompatActivity
         } else {
             // Locate the image folder in your SD Card
             file = new File(Environment.getExternalStorageDirectory()
-                    + File.separator + "Dress");
+                    + File.separator + "MOD Images");
             // Create a new folder if no folder named SDImageTutorial exist
             file.mkdirs();
         }
