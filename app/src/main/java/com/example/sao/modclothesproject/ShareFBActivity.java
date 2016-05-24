@@ -29,14 +29,14 @@ public class ShareFBActivity extends AppCompatActivity {
     }
 
     // When Post Status Update button is clicked
-    public void postStatusUpdate(View v){
+   /* public void postStatusUpdate(View v){
         // Pass null as parameter for setLink method to post status update
         FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(this)
                 .setLink(null)
                 .build();
         uiHelper.trackPendingDialogCall(shareDialog.present());
     }
-
+*/
     // When Share this tutorial on FB button is clicked
     public void shareTutorialonFB(View v){
         FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(this)

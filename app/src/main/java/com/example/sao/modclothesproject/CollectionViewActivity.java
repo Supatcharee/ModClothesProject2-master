@@ -66,51 +66,7 @@ public class CollectionViewActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*Button btnEdit = (Button) findViewById(R.id.btnEdit);
-        btnEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-                //Intent imageIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-
-                File imagesFolder = new File(Environment.getExternalStorageDirectory(), "MOD Images");
-
-                imagesFolder.mkdirs();
-
-                Log.e("sao_project_2_test", "" + imagesFolder.exists());
-
-                File image = new File(imagesFolder, "Im_" + timeStamp + ".png");
-
-                Uri uriSavedImage = Uri.fromFile(image);
-
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, uriSavedImage);
-                startActivityForResult(intent, TAKE_PICTURE);
-
-
-            }
-        });*/
-
-        /*Button btnHome = (Button) findViewById(R.id.btnEdit);
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CollectionViewActivity.this, MainActivity.class);
-                startActivity(intent);
-
-            }
-        });*/
-
-        Button btnCancel = (Button) findViewById(R.id.btnCancel);
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CollectionViewActivity.this, CollectionsActivity.class);
-                startActivity(intent);
-
-            }
-        });
        /* Button button5 = (Button) findViewById(R.id.button5);
         button5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

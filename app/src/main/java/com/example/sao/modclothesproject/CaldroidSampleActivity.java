@@ -74,10 +74,8 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         cal.add(Calendar.DATE, -1);
         Date oneDate = cal.getTime();
 
-        cal.add(Calendar.DATE, 1);
-        Date blueDate = cal.getTime();
 
-        cal.add(Calendar.DATE, 2);
+        cal.add(Calendar.DATE, -1);
         Date twoDate = cal.getTime();
 
         cal.add(Calendar.DATE, 3);
@@ -106,10 +104,10 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
             Drawable ac = Drawable.createFromPath(ab2);
             //caldroidFragment.setBackgroundDrawableForDate(end,greenDate);
            // caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
-            caldroidFragment.setBackgroundDrawableForDate(ac,blueDate);
-            caldroidFragment.setBackgroundDrawableForDate(end,twoDate);
+            caldroidFragment.setBackgroundDrawableForDate(end,threeDate);
+            caldroidFragment.setBackgroundDrawableForDate(ac,twoDate);
             caldroidFragment.setBackgroundDrawableForDate(dd,oneDate);
-            caldroidFragment.setTextColorForDate(R.color.black, blueDate);
+            //caldroidFragment.setTextColorForDate(R.color.black, blueDate);
 
         }
     }
@@ -499,7 +497,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
         String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
                 MyDbHelper.COL_DATE };
-        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME + " LIKE '%May 24, 2016%'", null,
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME + " LIKE '%May 25, 2016%'", null,
                 null, null, null);
 
         String[] showColumns = new String[] { MyDbHelper.COL_NAME,

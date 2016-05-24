@@ -36,7 +36,7 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" Share Page &amp; Update Status"
+        android:text=" Share MOD's CLOTHES Page"
         android:layout_gravity="center_horizontal"
         android:textColor="#fefdfd"
         android:background="#FFC0CB"
