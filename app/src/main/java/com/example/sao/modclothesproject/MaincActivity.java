@@ -51,10 +51,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
     Button b;
     Button button;
-    Drawable drawable;
     Bitmap bitmap;
-    String ImagePath;
-    Uri URI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -349,8 +346,9 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         }
 
         if (id == R.id.home) {
-            Intent i = new Intent(MaincActivity.this, MainActivity.class);
-            startActivity(i);
+            /*Intent i = new Intent(MaincActivity.this, MainActivity.class);
+            startActivity(i);*/
+
         }
 
         if (id == R.id.save) {
@@ -361,7 +359,13 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         return super.onOptionsItemSelected(item);
 
     }
-
+    @Override
+    public boolean onSupportNavigateUp(){
+        Intent i = new Intent(MaincActivity.this, CollectionsActivity.class);
+        startActivity(i);
+        // or call onBackPressed()
+        return true;
+    }
 
     }
 
