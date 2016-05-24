@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -61,27 +64,48 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         cal.add(Calendar.DATE, 0);
+        Date today = cal.getTime();
+
+        cal.add(Calendar.DATE, -1);
         Date oneDate = cal.getTime();
 
-        cal.add(Calendar.DATE, 3);
+        cal.add(Calendar.DATE, 1);
+        Date blueDate = cal.getTime();
+
+        cal.add(Calendar.DATE, 2);
         Date twoDate = cal.getTime();
 
-        // Min date is last 7 days
+        cal.add(Calendar.DATE, 3);
+        Date threeDate = cal.getTime();
+
+        /*// Min date is last 7 days
         cal.add(Calendar.DATE, -7);
         Date blueDate = cal.getTime();
 
         // Max date is next 7 days
         cal = Calendar.getInstance();
         cal.add(Calendar.DATE, 7);
-        Date greenDate = cal.getTime();
+        Date greenDate = cal.getTime();*/
 
         if (caldroidFragment != null) {
             int c = listFile.length-1;
-            String abc = listFile[c].getAbsolutePath().toString();
-            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
-            caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),twoDate);
+            int b = listFile.length-2;
+            int a = listFile.length-3;
+            String ab = listFile[a].getAbsolutePath().toString();
+            String ab1 = listFile[b].getAbsolutePath().toString();
+            String ab2 = listFile[c].getAbsolutePath().toString();
+            //caldroidFragment.setTextColorForDate(R.color.black, greenDate);
+            Drawable dd = Drawable.createFromPath(ab);
+            caldroidFragment.setBackgroundDrawableForDate(dd,twoDate);
+            Drawable end = Drawable.createFromPath(ab1);
+            Drawable ac = Drawable.createFromPath(ab2);
+            //caldroidFragment.setBackgroundDrawableForDate(end,greenDate);
+           // caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
+            caldroidFragment.setBackgroundDrawableForDate(ac,blueDate);
+            caldroidFragment.setBackgroundDrawableForDate(end,twoDate);
+            caldroidFragment.setBackgroundDrawableForDate(dd,oneDate);
             caldroidFragment.setTextColorForDate(R.color.black, blueDate);
-            caldroidFragment.setTextColorForDate(R.color.black, greenDate);
+
         }
     }
 
@@ -1061,5 +1085,32 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         cursor.requery();
         adapter.notifyDataSetChanged();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+
+
+        if (id == R.id.home) {
+            Intent intent = new Intent(CaldroidSampleActivity.this, MainActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 
 }
