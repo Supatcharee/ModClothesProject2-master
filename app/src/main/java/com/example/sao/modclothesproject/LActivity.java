@@ -93,14 +93,14 @@ public class LActivity extends AppCompatActivity implements MyRecyclerViewAdapte
             }
         });
 
-        /*b = (Button) findViewById(R.id.clock);
+        b = (Button) findViewById(R.id.clock);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LActivity.this, SetTimeActivity.class);
+                Intent intent = new Intent(LActivity.this, MyActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         /*btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

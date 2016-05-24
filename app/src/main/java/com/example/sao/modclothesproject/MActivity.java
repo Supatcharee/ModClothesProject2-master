@@ -97,7 +97,7 @@ public class MActivity extends AppCompatActivity implements MyRecyclerViewAdapte
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MActivity.this, SetTimeActivity.class);
+                Intent intent = new Intent(MActivity.this, MyActivity.class);
                 startActivity(intent);
             }
         });
