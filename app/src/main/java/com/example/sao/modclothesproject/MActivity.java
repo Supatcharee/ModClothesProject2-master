@@ -75,14 +75,7 @@ public class MActivity extends AppCompatActivity implements MyRecyclerViewAdapte
             }
         });
 
-        imageView = (ImageView) findViewById(R.id.imageView5);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myRecyclerViewAdapter.clearAll();
-                prepareGalleryimage5();
-            }
-        });
+
 
         imageView = (ImageView) findViewById(R.id.imageView6);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -222,24 +215,6 @@ public class MActivity extends AppCompatActivity implements MyRecyclerViewAdapte
         }
     }
 
-    private void prepareGalleryimage5(){
-        String ExternalStorageDirectoryPath = Environment
-                .getExternalStorageDirectory()
-                .getAbsolutePath();
-        String targetPath = ExternalStorageDirectoryPath + "/Accessories/";
-
-        Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
-        File targetDirector = new File(targetPath);
-
-        File[] files = targetDirector.listFiles();
-        for (File file : files){
-            Uri uri = Uri.fromFile(file);
-            myRecyclerViewAdapter.add(
-                    myRecyclerViewAdapter.getItemCount(),
-                    uri);
-
-        }
-    }
 
     private void prepareGalleryimage6(){
         String ExternalStorageDirectoryPath = Environment

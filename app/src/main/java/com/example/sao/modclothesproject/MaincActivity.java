@@ -238,7 +238,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
             imageView = (ImageView) findViewById(R.id.info1);
             bmp = BitmapFactory.decodeFile(item.getItemUri());
-            bmp = Bitmap.createScaledBitmap(bmp, 600, 900, false);
+            bmp = Bitmap.createScaledBitmap(bmp, 130, 500, false);
             imageView.setImageBitmap(bmp);
         }
 
@@ -282,9 +282,8 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         }
 
         if (id == R.id.home) {
-            /*Intent i = new Intent(MaincActivity.this, MainActivity.class);
-            startActivity(i);*/
-
+            Intent i = new Intent(MaincActivity.this, MainActivity.class);
+            startActivity(i);
         }
 
         if (id == R.id.save) {

@@ -55,7 +55,7 @@ public class ClosetActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /*// Check for SD Card
+        // Check for SD Card
         if (!Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
@@ -107,7 +107,7 @@ public class ClosetActivity extends AppCompatActivity
                 startActivity(i);
             }
 
-        });*/
+        });
     }
     private void sharePhotoToFacebook(){
 

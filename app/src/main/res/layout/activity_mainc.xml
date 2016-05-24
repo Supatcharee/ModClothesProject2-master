@@ -61,7 +61,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@mipmap/cessories"
+                android:background="#2222"
                 android:layout_marginTop="170dp"
                 android:layout_marginLeft="160dp"
                 android:id="@+id/imageView4" />
@@ -69,7 +69,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@mipmap/shoes"
+                android:background="#2222"
                 android:layout_marginTop="300dp"
                 android:layout_marginLeft="160dp"
                 android:id="@+id/imageView6" />
