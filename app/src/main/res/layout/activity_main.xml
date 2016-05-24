@@ -22,6 +22,7 @@
                 android:layout_width="140dp"
                 android:layout_height="120dp"
                 android:text="Closet"
+                android:backgroundTint="#5affffff"
                 android:id="@+id/ibtnCloset"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true" />
@@ -29,8 +30,10 @@
             <ImageButton
 
                 android:layout_width="140dp"
-                android:layout_height="208dp"
+                android:layout_height="210dp"
                 android:text="Calendar"
+                android:background="@color/colorBackground"
+                android:backgroundTint="#5affffff"
                 android:id="@+id/ibtnCalendar"
                 android:layout_marginTop="7dp"
                 android:layout_below="@+id/ibtnCloset"
@@ -41,6 +44,7 @@
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:text="Collection"
+                android:backgroundTint="#5affffff"
                 android:id="@+id/btnCollection"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true" />
@@ -52,13 +56,15 @@
                 android:text="Calendar"
                 android:id="@+id/btnWomenStyle"
                 android:layout_below="@+id/btnCollection"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#5affffff" />
 
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
                 android:id="@+id/imageButton2"
                 android:layout_marginTop="5dp"
+                android:backgroundTint="#5affffff"
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/ibtnCalendar"
                 android:layout_below="@+id/btnWS"
@@ -98,12 +104,7 @@
                 android:layout_below="@+id/btnC"
                 android:layout_alignParentEnd="true"/>
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text="Help"
-                android:id="@+id/imageView6"
-                android:layout_marginStart="10dp" />
+
 
             <ImageView
                 android:layout_width="50dp"
@@ -118,7 +119,7 @@
 
             <Button
                 android:layout_width="141dp"
-                android:layout_height="81dp"
+                android:layout_height="88dp"
                 android:id="@+id/btnWS1"
                 android:layout_marginTop="4dp"
                 android:backgroundTint="#05ffffff" />
@@ -126,8 +127,9 @@
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_height="45dp"
                 android:text="Closet"
+                android:backgroundTint="#5affffff"
                 android:id="@+id/btnCS"
                 android:layout_alignBottom="@+id/ibtnCloset" />
 
@@ -136,13 +138,16 @@
                 android:layout_height="210dp"
                 android:layout_marginTop="130dp"
                 android:id="@+id/btnCS1"
-                android:backgroundTint="#05ffffff" />
+                android:background="@color/colorBackground"
+                android:backgroundTint="#05ffffff"
+                android:layout_alignBottom="@+id/btnWS" />
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_height="45dp"
                 android:text="Collection"
                 android:id="@+id/btnCT"
+                android:backgroundTint="#5affffff"
                 android:layout_alignTop="@+id/btnCollection"
                 android:layout_alignStart="@+id/btnCollection"/>
 
@@ -150,9 +155,10 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="45dp"
                 android:text="Women Style"
                 android:id="@+id/btnC"
+                android:backgroundTint="#5affffff"
                 android:layout_alignTop="@+id/btnWomenStyle"
                 android:layout_alignStart="@+id/btnWomenStyle"
                 android:layout_alignParentEnd="true" />
@@ -187,13 +193,16 @@
                 android:layout_height="40dp"
                 android:text="Calendar"
                 android:id="@+id/btnWS"
+                android:background="@color/colorBackground"
+                android:backgroundTint="#5affffff"
                 android:layout_marginTop="300dp" />
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_height="45dp"
                 android:text="About"
                 android:id="@+id/btnA"
+                android:backgroundTint="#5affffff"
                 android:layout_alignBottom="@+id/imageButton2" />
 
         </RelativeLayout>
