@@ -23,7 +23,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="200dp"
+                android:layout_width="130dp"
                 android:layout_height="250dp"
                 android:id="@+id/imgvApple"
                 android:background="@mipmap/apple"
