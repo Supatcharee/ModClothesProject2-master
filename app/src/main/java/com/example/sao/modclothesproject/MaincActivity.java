@@ -302,7 +302,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         return true;
     }
 
-    }
+}
 
 
 

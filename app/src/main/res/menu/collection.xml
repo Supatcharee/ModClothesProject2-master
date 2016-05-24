@@ -6,21 +6,21 @@
         android:id="@+id/edit"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        android:icon="@drawable/ic_mode_edit_black_24dp"
+        android:icon="@drawable/edit"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/home"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        android:icon="@drawable/ic_account_balance_black_24dp"
+        android:icon="@drawable/home"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/save"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        android:icon="@drawable/ic_save_black_24dp"
+        android:icon="@drawable/save"
         app:showAsAction="always" />
 
 

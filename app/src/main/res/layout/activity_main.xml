@@ -74,18 +74,16 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp" />
 
-
-
             <ImageView
                 android:layout_width="140dp"
-                android:layout_height="110dp"
+                android:layout_height="130dp"
                 android:id="@+id/imageView4"
                 android:layout_alignBottom="@+id/btnCollection"
                 android:layout_marginLeft="175dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@mipmap/collection"
+
+                android:background="@drawable/collection"
                 android:layout_below="@+id/btnCT"
                 android:layout_alignParentEnd="true"/>
 
@@ -112,7 +110,7 @@
                 android:layout_height="50dp"
                 android:id="@+id/imageView8"
                 android:background="@mipmap/information_symbol"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginLeft="45dp"
                 android:layout_below="@+id/ibtnCalendar" />
 

@@ -35,13 +35,19 @@
             android:label="@string/title_activity_closet"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ViewImage" />
-        <activity android:name=".WomanStyleActivity" />
-        <activity android:name=".PareShapeActivity" />
-        <activity android:name=".AppleShapeActivity" />
-        <activity android:name=".HourglassShapeActivity" />
-        <activity android:name=".RectangleActivity" />
+        <activity android:name=".WomanStyleActivity"
+            android:label="@string/title_activity_womanstyle"/>
+        <activity android:name=".PareShapeActivity"
+            android:label="@string/title_activity_pare_shape"/>
+        <activity android:name=".AppleShapeActivity"
+            android:label="@string/title_activity_apple_shape"/>
+        <activity android:name=".HourglassShapeActivity"
+            android:label="@string/title_activity_hourglass_shape"/>
+        <activity android:name=".RectangleActivity"
+            android:label="@string/title_activity_rectangle"/>
         <activity android:name=".CollectionActivity" />
-        <activity android:name=".AboutActivity" />
+        <activity android:name=".AboutActivity"
+            android:label="@string/title_activity_about"/>
         <activity
             android:name=".CollectionsActivity"
             android:label="@string/title_activity_collections"
@@ -49,20 +55,29 @@
         <activity android:name=".PreviewActivity" />
         <activity android:name=".CollectionViewActivity" />
         <activity android:name=".AddFabActivity" />
-        <activity android:name=".InsertsMeasurementsActivity" />
+        <activity android:name=".InsertsMeasurementsActivity"
+            android:label="@string/title_activity_input" />
         <activity android:name=".SActivity" />
         <activity android:name=".MActivity" />
         <activity android:name=".LActivity" />
         <activity android:name=".XLActivity" />
-        <activity android:name=".MaincActivity" />
-        <activity android:name=".ShitsActivity" />
-        <activity android:name=".PantsActivity" />
-        <activity android:name=".SkirtsActivity" />
-        <activity android:name=".DressActivity" />
+        <activity android:name=".MaincActivity"
+            android:label="@string/title_activity_mainc" />
+        <activity android:name=".ShitsActivity"
+            android:label="@string/title_activity_share_shirt"/>
+        <activity android:name=".PantsActivity"
+            android:label="@string/title_activity_share_pants"/>
+        <activity android:name=".SkirtsActivity"
+            android:label="@string/title_activity_share_skirt"/>
+        <activity android:name=".DressActivity"
+            android:label="@string/title_activity_share_dress"/>
         <activity android:name=".ShoesActivity" />
-        <activity android:name=".AccessoriesActivity" />
-        <activity android:name=".ShareFBActivity" />
-        <activity android:name=".SetTimeActivity" />
+        <activity android:name=".AccessoriesActivity"
+            android:label="@string/title_activity_share_accessorries"/>
+        <activity android:name=".ShareFBActivity"
+            android:label="@string/title_activity_share_fb"/>
+        <activity android:name=".SetTimeActivity"
+            android:label="@string/title_activity_my"/>
         <activity android:name=".Calendar" />
         <activity android:name=".ActionBarActivity" />
 
@@ -72,7 +87,8 @@
 
         <receiver android:name=".AlarmReceiver" />
 
-        <activity android:name=".CaldroidSampleActivity" />
+        <activity android:name=".CaldroidSampleActivity"
+            android:label="@string/title_activity_caldroid" />
         <activity
             android:name=".MyActivity"
             android:label="@string/title_activity_my"
