@@ -82,6 +82,7 @@ public class MyActivity extends AppCompatActivity
     private TextView alarmTextView;
     AlarmReceiver a;
 
+
     public static MyActivity instance() {
         return inst;
     }
@@ -122,14 +123,17 @@ public class MyActivity extends AppCompatActivity
         }
     }
 
+    public void w() {
+        String p= lblDate.toString();
 
-
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -186,6 +190,7 @@ public class MyActivity extends AppCompatActivity
             cursor.requery();
             adapter1.notifyDataSetChanged();
             etPersonName.setText(null);
+
 
         } else {
             alarmManager.cancel(pendingIntent);

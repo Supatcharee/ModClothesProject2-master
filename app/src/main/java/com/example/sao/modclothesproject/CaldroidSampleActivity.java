@@ -1,10 +1,13 @@
 package com.example.sao.modclothesproject;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AlertDialog;
@@ -17,6 +20,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,6 +37,7 @@ import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
 
 import java.io.File;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -65,50 +70,219 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     private CaldroidFragment caldroidFragment;
     private CaldroidFragment dialogCaldroidFragment;
 
+    private void cal_05312016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 5);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05302016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 4);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05292016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 3);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05282016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 2);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05272016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 1);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05262016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 0);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05252016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -1);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05242016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -2);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+
+    private void cal_05232016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -3);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05222016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -4);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05212016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -5);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05202016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -6);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05192016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -7);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05182016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -7);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05172016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -8);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+
+
     private void setCustomResourceForDates() {
         Calendar cal = Calendar.getInstance();
 
-        cal.add(Calendar.DATE, 0);
-        Date today = cal.getTime();
-
-        cal.add(Calendar.DATE, -1);
-        Date oneDate = cal.getTime();
-
-
-        cal.add(Calendar.DATE, -1);
-        Date twoDate = cal.getTime();
-
-        cal.add(Calendar.DATE, 3);
-        Date threeDate = cal.getTime();
-
-        /*// Min date is last 7 days
+        // Min date is last 7 days
         cal.add(Calendar.DATE, -7);
         Date blueDate = cal.getTime();
 
         // Max date is next 7 days
         cal = Calendar.getInstance();
         cal.add(Calendar.DATE, 7);
-        Date greenDate = cal.getTime();*/
+        Date greenDate = cal.getTime();
 
         if (caldroidFragment != null) {
-            int c = listFile.length-1;
-            int b = listFile.length-2;
-            int a = listFile.length-3;
-            String ab = listFile[a].getAbsolutePath().toString();
-            String ab1 = listFile[b].getAbsolutePath().toString();
-            String ab2 = listFile[c].getAbsolutePath().toString();
-            //caldroidFragment.setTextColorForDate(R.color.black, greenDate);
-            Drawable dd = Drawable.createFromPath(ab);
-            caldroidFragment.setBackgroundDrawableForDate(dd,twoDate);
-            Drawable end = Drawable.createFromPath(ab1);
-            Drawable ac = Drawable.createFromPath(ab2);
-            //caldroidFragment.setBackgroundDrawableForDate(end,greenDate);
-           // caldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.mipmap.aaa),oneDate);
-            caldroidFragment.setBackgroundDrawableForDate(end,threeDate);
-            caldroidFragment.setBackgroundDrawableForDate(ac,twoDate);
-            caldroidFragment.setBackgroundDrawableForDate(dd,oneDate);
-            //caldroidFragment.setTextColorForDate(R.color.black, blueDate);
-
+            caldroidFragment.setTextColorForDate(R.color.white, blueDate);
+            caldroidFragment.setTextColorForDate(R.color.white, greenDate);
         }
     }
 
@@ -116,56 +290,6 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caldroid_sample);
-        list = (ListView) findViewById(R.id.list);
-        list.setOnItemClickListener(this);
-
-        dbHelper = new MyDbHelper(this);
-        if (!Environment.getExternalStorageState().equals(
-                Environment.MEDIA_MOUNTED)) {
-            Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
-                    .show();
-        } else {
-            // Locate the image folder in your SD Card
-            file = new File(Environment.getExternalStorageDirectory()
-                    + File.separator + "Collections");
-            // Create a new folder if no folder named SDImageTutorial exist
-            if(!file.exists()) {
-                file.mkdirs();
-            }
-        }
-
-        if (file.isDirectory()) {
-
-            listFile = file.listFiles();
-            // Create a String array for FilePathStrings
-            FilePathStrings = new String[listFile.length];
-            // Create a String array for FileNameStrings
-            FileNameStrings = new String[listFile.length];
-
-            for (int i = 0; i < listFile.length; i++) {
-                // Get the path of the image file
-                FilePathStrings[i] = listFile[i].getAbsolutePath();
-                // Get the name image file
-                FileNameStrings[i] = listFile[i].getName();
-            }
-            int i = 1;
-            int a = 2;
-            int b = 3;
-            int c = listFile.length-1;
-            /*Toast.makeText(getApplicationContext(), listFile[i].getAbsolutePath(),
-                    Toast.LENGTH_SHORT).show();
-            Toast.makeText(getApplicationContext(), listFile[a].getAbsolutePath(),
-                    Toast.LENGTH_SHORT).show();
-            Toast.makeText(getApplicationContext(), listFile[b].getAbsolutePath(),
-                    Toast.LENGTH_SHORT).show();*/
-            String abc = listFile[c].getAbsolutePath().toString();
-
-            Toast.makeText(getApplicationContext(), listFile[c].getAbsolutePath(),
-                    Toast.LENGTH_SHORT).show();
-        }
-
-
-
 
 
         final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
@@ -206,9 +330,98 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 //            args.putInt(CaldroidFragment.THEME_RESOURCE, com.caldroid.R.style.CaldroidDefaultDark);
 
             caldroidFragment.setArguments(args);
+
+            // Check for SD Card
+            if (!Environment.getExternalStorageState().equals(
+                    Environment.MEDIA_MOUNTED)) {
+                Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
+                        .show();
+            } else {
+                // Locate the image folder in your SD Card
+                file = new File(Environment.getExternalStorageDirectory()
+                        + File.separator + "Collections");
+                // Create a new folder if no folder named SDImageTutorial exist
+                file.mkdirs();
+            }
+
+            if (file.isDirectory()) {
+                listFile = file.listFiles();
+                // Create a String array for FilePathStrings
+                FilePathStrings = new String[listFile.length];
+                // Create a String array for FileNameStrings
+                FileNameStrings = new String[listFile.length];
+
+                for (int i = 0; i < listFile.length; i++) {
+                    // Get the path of the image file
+                    FilePathStrings[i] = listFile[i].getAbsolutePath();
+                    // Get the name image file
+                    FileNameStrings[i] = listFile[i].getName();
+                    String s = listFile[i].getAbsolutePath().toString();
+                    if(listFile[i].getAbsolutePath().toString().contains("05312016")){cal_05312016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05302016")){cal_05302016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05292016")){cal_05292016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05282016")){cal_05282016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05272016")){cal_05272016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05262016")){cal_05262016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05252016")){cal_05252016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05242016")){cal_05242016(s);}
+
+                    else if(listFile[i].getAbsolutePath().toString().contains("05232016")){cal_05232016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05222016")){cal_05222016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05212016")){cal_05212016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05202016")){cal_05202016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05192016")){cal_05192016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05182016")){cal_05182016(s);}
+                    else if(listFile[i].getAbsolutePath().toString().contains("05172016")){cal_05172016(s);}
+
+                }
+            }
+        }
+       /* if (!Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED)) {
+            Toast.makeText(this, "Error! No SDCARD Found!", Toast.LENGTH_LONG)
+                    .show();
+        } else {
+            // Locate the image folder in your SD Card
+            file = new File(Environment.getExternalStorageDirectory()
+                    + File.separator + "Collections");
+            // Create a new folder if no folder named SDImageTutorial exist
+            file.mkdirs();
         }
 
+        if (file.isDirectory()) {
+
+            listFile = file.listFiles();
+            // Create a String array for FilePathStrings
+            FilePathStrings = new String[listFile.length];
+            // Create a String array for FileNameStrings
+            FileNameStrings = new String[listFile.length];
+            for (int i = 0; i < listFile.length; i++) {
+            String uri = listFile[1].getAbsolutePath().toString();
+            a(uri);
+            }
+        }*/
+
+
+            /*Toast.makeText(getApplicationContext(), listFile[i].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), listFile[a].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), listFile[b].getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();*/
+
+
+
+
+        list = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(this);
+
+        dbHelper = new MyDbHelper(this);
+
+
+
         setCustomResourceForDates();
+
 
         // Attach to the activity
         FragmentTransaction t = getSupportFragmentManager().beginTransaction();
@@ -220,6 +433,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
 
             @Override
             public void onSelectDate(Date date, View view) {
+
                 Toast.makeText(getApplicationContext(),
                          formatter.format(date),
                         Toast.LENGTH_SHORT).show();
@@ -305,6 +519,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 }
                 if(formatter.format(date).contains("27 May 2016")){
                     onResume27();
+
                 }
                 if(formatter.format(date).contains("28 May 2016")){
                     onResume28();
@@ -318,6 +533,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 if(formatter.format(date).contains("31 May 2016")){
                     onResume31();
                 }
+
 
             }
 
@@ -351,126 +567,12 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         // Setup Caldroid
         caldroidFragment.setCaldroidListener(listener);
 
+
         final TextView textView = (TextView) findViewById(R.id.textview);
 
-        //final Button customizeButton = (Button) findViewById(R.id.customize_button);
-
-        // Customize the calendar
-        /*customizeButton.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (undo) {
-                    customizeButton.setText(getString(R.string.customize));
-                    textView.setText("");
-
-                    // Reset calendar
-                    caldroidFragment.clearDisableDates();
-                    caldroidFragment.clearSelectedDates();
-                    caldroidFragment.setMinDate(null);
-                    caldroidFragment.setMaxDate(null);
-                    caldroidFragment.setShowNavigationArrows(true);
-                    caldroidFragment.setEnableSwipe(true);
-                    caldroidFragment.refreshView();
-                    undo = false;
-                    return;
-                }*/
-
-                // Else
-                /*undo = true;
-                customizeButton.setText(getString(R.string.undo));
-                Calendar cal = Calendar.getInstance();
-
-                // Min date is last 7 days
-                cal.add(Calendar.DATE, -7);
-                Date minDate = cal.getTime();
-
-                // Max date is next 7 days
-                cal = Calendar.getInstance();
-                cal.add(Calendar.DATE, 14);
-                Date maxDate = cal.getTime();
-
-                // Set selected dates
-                // From Date
-                *//*cal = Calendar.getInstance();
-                cal.add(Calendar.DATE, 2);
-                Date fromDate = cal.getTime();
-
-                // To Date
-                cal = Calendar.getInstance();
-                cal.add(Calendar.DATE, 3);
-                Date toDate = cal.getTime();
-*//*
-                // Set disabled dates
-                ArrayList<Date> disabledDates = new ArrayList<Date>();
-                for (int i = 5; i < 8; i++) {
-                    cal = Calendar.getInstance();
-                    cal.add(Calendar.DATE, i);
-                    disabledDates.add(cal.getTime());
-                }
-
-                // Customize
-                caldroidFragment.setMinDate(minDate);
-                caldroidFragment.setMaxDate(maxDate);
-                caldroidFragment.setDisableDates(disabledDates);
-                //caldroidFragment.setSelectedDates(fromDate, toDate);
-                caldroidFragment.setShowNavigationArrows(false);
-                caldroidFragment.setEnableSwipe(false);
-
-                caldroidFragment.refreshView();
-
-                // Move to date
-                // cal = Calendar.getInstance();
-                // cal.add(Calendar.MONTH, 12);
-                // caldroidFragment.moveToDate(cal.getTime());
-
-                *//*String text = "Today: " + formatter.format(new Date()) + "\n";
-                text += "Min Date: " + formatter.format(minDate) + "\n";
-                text += "Max Date: " + formatter.format(maxDate) + "\n";
-                //text += "Select From Date: " + formatter.format(fromDate)
-                //        + "\n";
-                //text += "Select To Date: " + formatter.format(toDate) + "\n";
-                for (Date date : disabledDates) {
-                    text += "Disabled Date: " + formatter.format(date) + "\n";
-                }
-
-                textView.setText(text);*//*
-            }
-        });*/
-
-        //Button showDialogButton = (Button) findViewById(R.id.show_dialog_button);
 
         final Bundle state = savedInstanceState;
-        /*showDialogButton.setOnClickListener(new OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                // Setup caldroid to use as dialog
-                dialogCaldroidFragment = new CaldroidFragment();
-                dialogCaldroidFragment.setCaldroidListener(listener);
-
-                // If activity is recovered from rotation
-                final String dialogTag = "CALDROID_DIALOG_FRAGMENT";
-                if (state != null) {
-                    dialogCaldroidFragment.restoreDialogStatesFromKey(
-                            getSupportFragmentManager(), state,
-                            "DIALOG_CALDROID_SAVED_STATE", dialogTag);
-                    Bundle args = dialogCaldroidFragment.getArguments();
-                    if (args == null) {
-                        args = new Bundle();
-                        dialogCaldroidFragment.setArguments(args);
-                    }
-                } else {
-                    // Setup arguments
-                    Bundle bundle = new Bundle();
-                    // Setup dialogTitle
-                    dialogCaldroidFragment.setArguments(bundle);
-                }
-
-                dialogCaldroidFragment.show(getSupportFragmentManager(),
-                        dialogTag);
-            }
-        });*/
     }
 
     /**
@@ -1060,12 +1162,44 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+    public void onItemClick(AdapterView<?> parent, View v, final int position, long id) {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(CaldroidSampleActivity.this);
+
+        builder.setTitle("This is a dialog.");
+        builder.setMessage("Do you like Android?");
+        builder.setPositiveButton("Yes",
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        /*cursor.moveToPosition(position);
+                        String rowId = cursor.getString(0);
+                        db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
+                        cursor.requery();*/
+                    }
+                });
+        builder.setNegativeButton("No",
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+        builder.show();
         cursor.moveToPosition(position);
         String rowId = cursor.getString(0);
         db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
         cursor.requery();
-        //adapter.notifyDataSetChanged();
+
+        // Showing Alert Message
+        /*cursor.moveToPosition(position);
+        String rowId = cursor.getString(0);
+        db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
+        cursor.requery();
+        //adapter.notifyDataSetChanged();*/
     }
 
     @Override

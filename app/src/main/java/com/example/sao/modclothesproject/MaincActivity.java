@@ -48,7 +48,6 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
 
     TextView textInfo;
     ImageView imageView;
-
     Button b;
     Button button;
     Bitmap bitmap;
@@ -58,7 +57,10 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainc);
 
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
 
         textInfo = (TextView) findViewById(R.id.info);
         textInfo.setMovementMethod(new ScrollingMovementMethod());
@@ -110,8 +112,8 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             }
         });
     }
-
     private void save(){
+
         View v1 = findViewById(R.id.relativeLayout);
         v1.setDrawingCacheEnabled(true);
         Bitmap bmp = Bitmap.createBitmap(v1.getDrawingCache());
@@ -122,7 +124,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             String filename  = (String)DateFormat.format("kkmmss-MMddyyyy"
                     , d.getTime());
             File dir = new File(Environment.getExternalStorageDirectory()
-                    , "/Collections/" + filename + ".png");
+                    , "/Collections/" + filename  + ".png");
             FileOutputStream out = new FileOutputStream(dir);
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
