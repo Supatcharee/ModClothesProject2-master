@@ -34,6 +34,7 @@ public class ViewImage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_image);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent i = getIntent();
 
@@ -119,5 +120,12 @@ public class ViewImage extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        Intent i = new Intent(ViewImage.this, CollectionsActivity.class);
+        startActivity(i);
+        // or call onBackPressed()
+        return true;
     }
 }

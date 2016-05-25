@@ -19,6 +19,7 @@ public class CollectionViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent i = getIntent();
 
@@ -102,13 +103,12 @@ public class CollectionViewActivity extends AppCompatActivity {
             }
         });*/
 
-
-
-
-
-
-
-
-
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        Intent i = new Intent(CollectionViewActivity.this, CollectionsActivity.class);
+        startActivity(i);
+        // or call onBackPressed()
+        return true;
     }
 }
