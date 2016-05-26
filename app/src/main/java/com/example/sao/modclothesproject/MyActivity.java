@@ -23,6 +23,7 @@ import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.android.datetimepicker.date.DatePickerDialog;
@@ -50,6 +51,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import singleton.SingleObject;
 
 public class MyActivity extends AppCompatActivity
         implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener,
@@ -81,7 +84,6 @@ public class MyActivity extends AppCompatActivity
     private static MyActivity inst;
     private TextView alarmTextView;
     AlarmReceiver a;
-
 
     public static MyActivity instance() {
         return inst;
@@ -159,6 +161,7 @@ public class MyActivity extends AppCompatActivity
         lblDate = (TextView) findViewById(R.id.lblDate);
         lblTime = (TextView) findViewById(R.id.lblTime);
 
+
         update();
 
         alarmTimePicker = (TimePicker) findViewById(R.id.alarmTimePicker);
@@ -191,7 +194,6 @@ public class MyActivity extends AppCompatActivity
             adapter1.notifyDataSetChanged();
             etPersonName.setText(null);
 
-
         } else {
             alarmManager.cancel(pendingIntent);
             setAlarmText("");
@@ -208,6 +210,8 @@ public class MyActivity extends AppCompatActivity
     private void update() {
         lblDate.setText(dateFormat.format(calendar.getTime()));
         lblTime.setText(timeFormat.format(calendar.getTime()));
+
+        SingleObject.getInstance().setText(lblDate.getText().toString());
     }
 
     public void onClick(View view) {

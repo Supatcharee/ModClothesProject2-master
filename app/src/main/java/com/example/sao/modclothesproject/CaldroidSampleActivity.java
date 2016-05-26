@@ -84,6 +84,10 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         }
     }
     private void cal_05302016(String s) {
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+       /* if(formatter.format(date).contains("01 May 2016")){
+            onResume1();
+        }*/
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
@@ -136,6 +140,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         }
     }
     private void cal_05262016(String s) {
+
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
@@ -244,7 +249,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -7);
+        cal.add(Calendar.DATE, -8);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -266,6 +271,234 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
             caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
         }
     }
+    private void cal_05162016(String s) {
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+//        if(onResumeCheck("09 May 2016") > 0){
+//            Toast.makeText(getApplicationContext(), ">0", Toast.LENGTH_SHORT).show();
+//        }
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -9);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05152016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -10);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05142016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -11);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05132016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -12);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05122016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -13);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05112016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -14);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05102016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -15);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05092016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -16);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05082016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -17);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05072016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -18);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05062016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -19);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05052016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -20);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05042016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -21);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05032016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -22);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05022016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -23);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_05012016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, -24);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+
 
 
     private void setCustomResourceForDates() {
@@ -358,21 +591,50 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     FileNameStrings[i] = listFile[i].getName();
                     String s = listFile[i].getAbsolutePath().toString();
                     if(listFile[i].getAbsolutePath().toString().contains("05312016")){cal_05312016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05302016")){cal_05302016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05292016")){cal_05292016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05282016")){cal_05282016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05272016")){cal_05272016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05262016")){cal_05262016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05252016")){cal_05252016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05242016")){cal_05242016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05302016")){cal_05302016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05292016")){cal_05292016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05282016")){cal_05282016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05272016")){cal_05272016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05262016")){cal_05262016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05252016")){cal_05252016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05242016")){cal_05242016(s);}
 
-                    else if(listFile[i].getAbsolutePath().toString().contains("05232016")){cal_05232016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05222016")){cal_05222016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05212016")){cal_05212016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05202016")){cal_05202016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05192016")){cal_05192016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05182016")){cal_05182016(s);}
-                    else if(listFile[i].getAbsolutePath().toString().contains("05172016")){cal_05172016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05232016")){cal_05232016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05222016")){cal_05222016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05212016")){cal_05212016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05202016")){cal_05202016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05192016")){cal_05192016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05182016")){cal_05182016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("05172016")){cal_05172016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 27")){cal_05272016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 26")){cal_05262016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 25")){cal_05252016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 24")){cal_05242016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 23")){cal_05232016(s);}
+
+                    if(listFile[i].getAbsolutePath().toString().contains("May 22")){cal_05222016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 21")){cal_05212016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 20")){cal_05202016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 19")){cal_05192016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 18")){cal_05182016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 17")){cal_05172016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 16")){cal_05162016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 15")){cal_05152016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 14")){cal_05142016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 13")){cal_05132016(s);}
+
+                    if(listFile[i].getAbsolutePath().toString().contains("May 12")){cal_05122016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 11")){cal_05112016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 10")){cal_05102016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 9")){cal_05092016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 8")){cal_05082016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 7")){cal_05072016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 6")){cal_05062016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 5")){cal_05052016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 4")){cal_05042016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 3")){cal_05032016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 2")){cal_05022016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 1")){cal_05012016(s);}
 
                 }
             }
@@ -610,6 +872,19 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 android.R.layout.two_line_list_item, cursor, showColumns, views);
         list.setAdapter(adapter1);
     }
+
+    public int onResumeCheck(String date) {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%May 10, 2016%'", null,
+                null, null, null);
+        Toast.makeText(getApplicationContext(), cursor.getCount(), Toast.LENGTH_SHORT).show();
+        return cursor.getCount();
+    }
+
     public void onResume1() {
         super.onResume();
         db = dbHelper.getWritableDatabase();
@@ -1162,21 +1437,22 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View v, final int position, long id) {
+    public void onItemClick(AdapterView<?> parent, View v, final int positionNok, long id) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(CaldroidSampleActivity.this);
 
         builder.setTitle("This is a dialog.");
-        builder.setMessage("Do you like Android?");
-        builder.setPositiveButton("Yes",
+        builder.setMessage("Are you sure you want to delete collection?");
+        AlertDialog.Builder yes = builder.setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int position) {
-                        /*cursor.moveToPosition(position);
+                        cursor.moveToPosition(positionNok);
                         String rowId = cursor.getString(0);
-                        db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
-                        cursor.requery();*/
+                        Toast.makeText(getApplicationContext(),rowId,Toast.LENGTH_LONG).show();
+                        db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[]{rowId});
+                        cursor.requery();
                     }
                 });
         builder.setNegativeButton("No",
@@ -1189,10 +1465,10 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 });
 
         builder.show();
-        cursor.moveToPosition(position);
+        /*cursor.moveToPosition(position);
         String rowId = cursor.getString(0);
         db.delete(MyDbHelper.TABLE_NAME, "_id = ?", new String[] { rowId });
-        cursor.requery();
+        cursor.requery();*/
 
         // Showing Alert Message
         /*cursor.moveToPosition(position);

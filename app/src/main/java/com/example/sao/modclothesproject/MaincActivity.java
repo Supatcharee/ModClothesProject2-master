@@ -40,6 +40,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import singleton.SingleObject;
+
 public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAdapter.OnItemClickListener {
 
     private RecyclerView myRecyclerView;
@@ -124,7 +126,7 @@ public class MaincActivity extends AppCompatActivity implements MyRecyclerViewAd
             String filename  = (String)DateFormat.format("kkmmss-MMddyyyy"
                     , d.getTime());
             File dir = new File(Environment.getExternalStorageDirectory()
-                    , "/Collections/" + filename  + ".png");
+                    , "/Collections/" + filename +SingleObject.getInstance().getText()+ ".png");
             FileOutputStream out = new FileOutputStream(dir);
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
