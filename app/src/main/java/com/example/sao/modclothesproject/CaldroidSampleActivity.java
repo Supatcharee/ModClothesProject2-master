@@ -262,7 +262,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -8);
+        cal.add(Calendar.DATE, -9);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -279,7 +279,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -9);
+        cal.add(Calendar.DATE, -10);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -293,7 +293,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -10);
+        cal.add(Calendar.DATE, -11);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -307,7 +307,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -11);
+        cal.add(Calendar.DATE, -12);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -321,7 +321,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -12);
+        cal.add(Calendar.DATE, -13);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -335,7 +335,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -13);
+        cal.add(Calendar.DATE, -14);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -349,7 +349,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -14);
+        cal.add(Calendar.DATE, -15);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -363,7 +363,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -15);
+        cal.add(Calendar.DATE, -16);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -377,7 +377,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -16);
+        cal.add(Calendar.DATE, -17);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -391,7 +391,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -17);
+        cal.add(Calendar.DATE, -18);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -405,7 +405,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -18);
+        cal.add(Calendar.DATE, -19);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -419,7 +419,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -19);
+        cal.add(Calendar.DATE, -20);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -433,7 +433,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -20);
+        cal.add(Calendar.DATE, -21);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -447,7 +447,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -21);
+        cal.add(Calendar.DATE, -22);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -461,7 +461,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -22);
+        cal.add(Calendar.DATE, -23);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -475,7 +475,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -23);
+        cal.add(Calendar.DATE, -24);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -489,7 +489,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         Calendar cal = Calendar.getInstance();
 
         // Min date is last 7 days
-        cal.add(Calendar.DATE, -24);
+        cal.add(Calendar.DATE, -25);
         Date blueDate = cal.getTime();
 
         if (caldroidFragment != null) {
@@ -498,6 +498,426 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
             caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
         }
     }
+
+
+
+    private void cal_06302016(String s) {
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+       /* if(formatter.format(date).contains("01 May 2016")){
+            onResume1();
+        }*/
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 35);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06292016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 34);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06282016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 33);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06272016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 32);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06262016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 31);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06252016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 30);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06242016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 29);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+
+    private void cal_06232016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 28);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06222016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 27);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06212016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 26);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06202016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 25);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06192016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 24);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06182016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 23);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06172016(String s) {
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 22);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06162016(String s) {
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+//        if(onResumeCheck("09 May 2016") > 0){
+//            Toast.makeText(getApplicationContext(), ">0", Toast.LENGTH_SHORT).show();
+//        }
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 21);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06152016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 20);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06142016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 19);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06132016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 18);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06122016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 17);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06112016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 16);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06102016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 15);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06092016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 14);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06082016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 13);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06072016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 12);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06062016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 11);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06052016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 10);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06042016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 9);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06032016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 8);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06022016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 7);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+    private void cal_06012016(String s) {
+
+        Calendar cal = Calendar.getInstance();
+
+        // Min date is last 7 days
+        cal.add(Calendar.DATE, 6);
+        Date blueDate = cal.getTime();
+
+        if (caldroidFragment != null) {
+            //ColorDrawable blue = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+            Drawable e= Drawable.createFromPath(s);
+            caldroidFragment.setBackgroundDrawableForDate(e, blueDate);
+        }
+    }
+
+
 
 
 
@@ -606,6 +1026,11 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     if(listFile[i].getAbsolutePath().toString().contains("05192016")){cal_05192016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("05182016")){cal_05182016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("05172016")){cal_05172016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 31")){cal_05312016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 30")){cal_05302016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 29")){cal_05292016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("May 28")){cal_05282016(s);}
+
                     if(listFile[i].getAbsolutePath().toString().contains("May 27")){cal_05272016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("May 26")){cal_05262016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("May 25")){cal_05252016(s);}
@@ -635,6 +1060,41 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     if(listFile[i].getAbsolutePath().toString().contains("May 3")){cal_05032016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("May 2")){cal_05022016(s);}
                     if(listFile[i].getAbsolutePath().toString().contains("May 1")){cal_05012016(s);}
+
+
+                    if(listFile[i].getAbsolutePath().toString().contains("June 30")){cal_06302016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 29")){cal_06292016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 28")){cal_06282016(s);}
+
+                    if(listFile[i].getAbsolutePath().toString().contains("June 27")){cal_06272016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 26")){cal_06262016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 25")){cal_06252016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 24")){cal_06242016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 23")){cal_06232016(s);}
+
+                    if(listFile[i].getAbsolutePath().toString().contains("June 22")){cal_06222016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 21")){cal_06212016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 20")){cal_06202016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 19")){cal_06192016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 18")){cal_06182016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 17")){cal_06172016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 16")){cal_06162016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 15")){cal_06152016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 14")){cal_06142016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 13")){cal_06132016(s);}
+
+                    if(listFile[i].getAbsolutePath().toString().contains("June 12")){cal_06122016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 11")){cal_06112016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 10")){cal_06102016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 9")){cal_06092016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 8")){cal_06082016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 7")){cal_06072016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 6")){cal_06062016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 5")){cal_06052016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 4")){cal_06042016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 3")){cal_06032016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 2")){cal_06022016(s);}
+                    if(listFile[i].getAbsolutePath().toString().contains("June 1")){cal_06012016(s);}
 
                 }
             }
@@ -796,6 +1256,101 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                     onResume31();
                 }
 
+                if(formatter.format(date).contains("01 June 2016")){
+                    onResume61();
+                }
+                if(formatter.format(date).contains("02 June 2016")){
+                    onResume62();
+                }
+                if(formatter.format(date).contains("03 June 2016")){
+                    onResume63();
+                }
+                if(formatter.format(date).contains("04 June 2016")){
+                    onResume64();
+                }
+                if(formatter.format(date).contains("05 June 2016")){
+                    onResume65();
+                }
+                if(formatter.format(date).contains("06 June 2016")){
+                    onResume66();
+                }
+                if(formatter.format(date).contains("07 June 2016")){
+                    onResume67();
+                }
+                if(formatter.format(date).contains("08 June 2016")){
+                    onResume68();
+                }
+                if(formatter.format(date).contains("09 June 2016")){
+                    onResume69();
+                }
+                if(formatter.format(date).contains("10 June 2016")){
+                    onResume610();
+                }
+                if(formatter.format(date).contains("11 June 2016")){
+                    onResume611();
+                }
+                if(formatter.format(date).contains("12 June 2016")){
+                    onResume612();
+                }
+                if(formatter.format(date).contains("13 June 2016")){
+                    onResume613();
+                }
+                if(formatter.format(date).contains("14 June 2016")){
+                    onResume614();
+                }
+                if(formatter.format(date).contains("15 June 2016")){
+                    onResume615();
+                }
+                if(formatter.format(date).contains("16 June 2016")){
+                    onResume616();
+                }
+                if(formatter.format(date).contains("17 June 2016")){
+                    onResume617();
+                }
+                if(formatter.format(date).contains("18 June 2016")){
+                    onResume618();
+                }
+                if(formatter.format(date).contains("19 June 2016")){
+                    onResume619();
+                }
+                if(formatter.format(date).contains("20 June 2016")){
+                    onResume620();
+                }
+                if(formatter.format(date).contains("21 June 2016")){
+                    onResume621();
+                }
+                if(formatter.format(date).contains("22 June 2016")){
+                    onResume622();
+                }
+                if(formatter.format(date).contains("23 June 2016")){
+                    onResume623();
+
+                }
+                if(formatter.format(date).contains("24 June 2016")){
+                    onResume624();
+
+                }
+                if(formatter.format(date).contains("25 June 2016")){
+                    onResume625();
+                }
+                if(formatter.format(date).contains("26 June 2016")){
+                    onResume626();
+                }
+                if(formatter.format(date).contains("27 June 2016")){
+                    onResume627();
+
+                }
+                if(formatter.format(date).contains("28 June 2016")){
+                    onResume628();
+                }
+                if(formatter.format(date).contains("29 June 2016")){
+                    onResume629();
+                }
+                if(formatter.format(date).contains("30 June 2016")){
+                    onResume630();
+                }
+
+
 
             }
 
@@ -873,7 +1428,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
         list.setAdapter(adapter1);
     }
 
-    public int onResumeCheck(String date) {
+    /*public int onResumeCheck(String date) {
         super.onResume();
         db = dbHelper.getWritableDatabase();
 
@@ -883,7 +1438,7 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 null, null, null);
         Toast.makeText(getApplicationContext(), cursor.getCount(), Toast.LENGTH_SHORT).show();
         return cursor.getCount();
-    }
+    }*/
 
     public void onResume1() {
         super.onResume();
@@ -1412,6 +1967,520 @@ public class CaldroidSampleActivity extends AppCompatActivity implements View.On
                 android.R.layout.two_line_list_item, cursor, showColumns, views);
         list.setAdapter(adapter1);
     }
+
+
+
+    public void onResume61() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 1, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume62() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 2, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume63() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 3, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume64() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 4, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume65() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 5, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume66() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 6, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume67() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 7, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume68() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 8, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume69() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 9, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume610() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 10, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume611() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 11, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume612() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 12, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume613() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 13, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume614() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 14, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume615() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 15, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume616() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 16, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume617() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 17, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume618() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 18, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume619() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 19, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume620() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 20, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume621() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 21, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume622() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 22, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume623() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 23, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume624() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 24, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume625() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 25, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume626() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 26, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume627() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 27, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume628() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 28, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume629() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 29, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+    public void onResume630() {
+        super.onResume();
+        db = dbHelper.getWritableDatabase();
+
+        String[] queryColumns = new String[] { "_id", MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        cursor = db.query(MyDbHelper.TABLE_NAME, queryColumns, MyDbHelper.COL_NAME  + " LIKE '%June 30, 2016%'", null,
+                null, null, null);
+
+        String[] showColumns = new String[] { MyDbHelper.COL_NAME,
+                MyDbHelper.COL_DATE };
+        int[] views = new int[] { android.R.id.text1, android.R.id.text2 };
+
+        adapter1 = new SimpleCursorAdapter(this,
+                android.R.layout.two_line_list_item, cursor, showColumns, views);
+        list.setAdapter(adapter1);
+    }
+
 
 
     @Override
